@@ -54,6 +54,14 @@ account均为小写。
 {ok: true, "accounts":["webnotes", "yingshidamowang"]}
 ```
 
+####获取订阅公众号数量
+```
+http://whosecard.com:8081/api/accountnum?key=***
+
+返回格式如下：
+{ok: true, "count":100}
+```
+
 ####公众号文章临时链接转为永久链接
 ```
 http://whosecard.com:8081/api/transferurl?url=***&key=***
