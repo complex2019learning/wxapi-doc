@@ -14,16 +14,28 @@ http://test.com/api/receiveExtNotification
 {
   "data": [
     {
-      "type":"NEW_ARTICLE",
+      "type":"NEW",
       "account" : "banyuetan-weixin",
       "title" : "【品读】真正的善良，是让大家都体面",
       "url" : "http://mp.weixin.qq.com/s?__biz=MjM5OTU4Nzc0Mg==&mid=2658605478&idx=1&sn=713642344f4b87d3b3e8139137b5c822",
       "timestamp" : 1498570320,
       "clicksCount":100,
       "likeCount":3
+    },
+    {
+      "type":"UPDATE",
+      "account" : "banyuetan-weixin",
+      "title" : "test",
+      "url" : "http://test.com",
+      "timestamp" : 1498570320,
+      "clicksCount":10,
+      "likeCount":1
     }
   ]
 }
+
+type参数可取[NEW|UPDATE]：取NEW时表示是新文章，为UPDATE时表示更新文章的阅读点赞数据。
+同一篇文章不会在data中出现两次。
 ```
 
 ####主动拉取更新数据
@@ -37,7 +49,7 @@ http://whosecard.com:8081/api/notification/listExt?key=***
   "ok":true,
   "extNotifications":[
     {
-      "type":"NEW_ARTICLE",
+      "type":"NEW",
       "account" : "banyuetan-weixin",
       "title" : "【品读】真正的善良，是让大家都体面",
       "url" : "http://mp.weixin.qq.com/s?__biz=MjM5OTU4Nzc0Mg==&mid=2658605478&idx=1&sn=713642344f4b87d3b3e8139137b5c822",
