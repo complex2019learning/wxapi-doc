@@ -1,0 +1,25 @@
+#公众号账号信息接口
+
+url请求需带上参数key，每个用户有唯一的key。
+
+所有接口均返回json格式，其中参数ok[true|false]表示是否请求成功.
+
+####获取公众号账号信息
+```
+http://whosecard.com:8081/api/account/info?account=webnotes&key=***
+
+返回格式如下：
+{
+account: "WebNotes",
+uuid: "C1080392D32744FD45596A58F74C7D84",
+tags: [
+	"自媒体人",
+	"TMT个人"
+],
+maxReleaseTimes: "2",
+indexUrl: "http://wx.qlogo.cn/mmhead/Q3auHgzwzM4EOYw3p9pQDznBzXPxFSx5xwQk6LWKAkbhPhHNQNgsCw/0",
+__biz: "MjM5ODIyMTE0MA==",
+accountType: "0",  # "0"为订阅号，"1"为服务号
+ok: true
+}
+```

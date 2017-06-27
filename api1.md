@@ -1,6 +1,6 @@
-#api接口描述
+#公众号即时更新接口
 
-所有接口均为GET接口，url请求需带上参数key，每个用户有唯一的key。
+url请求需带上参数key，每个用户有唯一的key。
 
 所有接口均返回json格式，其中参数ok[true|false]表示是否请求成功.
 
@@ -62,40 +62,3 @@ http://whosecard.com:8081/api/accountnum?key=***
 {ok: true, "count":100}
 ```
 
-####公众号文章临时链接转为永久链接
-```
-http://whosecard.com:8081/api/transferurl/tmp2forever?url=***&key=***
-
-参数中的url为urlencode后的临时链接（从搜狗获取的文章链接）
-eg:
-http://whosecard.com:8081/api/transferurl/tmp2forever?url=https%3a%2f%2fmp.weixin.qq.com%2fs%3ftimestamp%3d1495560892%26src%3d3%26ver%3d1%26signature%3diwHBaGJJBumXB4o0dEjdFM-Tm4DoYVUBEbzMGXK9Mb3Zy8Xbv8TJuJRRYq4*XWheCnRL1ZUMtIZeqGJfFMyMlE3hKi-3*7EMlUMaEid3BV4Ip5CjG3uihOI3OSpK07dkjTLw2LXxfp103Kcq4Gkc*I0ekHo4gu*lHbiFG8qRPSg%3d&key=***
-```
-
-####公众号文章短链接转为长链接
-```
-http://whosecard.com:8081/api/transferurl/short2long?url=***&key=***
-
-参数中的url为urlencode后的短链接
-eg:
-http://whosecard.com:8081/api/transferurl/short2long?url=https%3a%2f%2fmp.weixin.qq.com%2fs%2fAuyufPtU1UeusDS6B34VZg&key=***
-```
-
-####获取公众号账号信息
-```
-http://whosecard.com:8081/api/account/info?account=webnotes&key=***
-
-返回格式如下：
-{
-account: "WebNotes",
-uuid: "C1080392D32744FD45596A58F74C7D84",
-tags: [
-	"自媒体人",
-	"TMT个人"
-],
-maxReleaseTimes: "2",
-indexUrl: "http://wx.qlogo.cn/mmhead/Q3auHgzwzM4EOYw3p9pQDznBzXPxFSx5xwQk6LWKAkbhPhHNQNgsCw/0",
-__biz: "MjM5ODIyMTE0MA==",
-accountType: "0",  # "0"为订阅号，"1"为服务号
-ok: true
-}
-```
