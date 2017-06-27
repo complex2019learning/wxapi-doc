@@ -16,7 +16,7 @@ http://test.com/api/receiveNotification?account=WebNotes&ts=1496331127
 
 ####主动拉取更新数据
 ```
-http://whosecard.com:8081/api/notifications?key=***
+http://whosecard.com:8081/api/notification/list?key=***
 
 此接口与更新回调接口结合使用，用户可主动拉取最近一个小时的公众号更新列表。
 
@@ -26,7 +26,7 @@ http://whosecard.com:8081/api/notifications?key=***
 
 ####添加公众号
 ```
-http://whosecard.com:8081/api/addaccount?account=WebNotes&key=***
+http://whosecard.com:8081/api/account/add?account=WebNotes&key=***
 
 account不区分大小写，必须先添加公众号后才能接收／拉取公众号更新通知。
 
@@ -36,7 +36,7 @@ account不区分大小写，必须先添加公众号后才能接收／拉取公�
 
 ####取消订阅公众号
 ```
-http://whosecard.com:8081/api/decaccount?account=WebNotes&key=***
+http://whosecard.com:8081/api/account/dec?account=WebNotes&key=***
 
 account不区分大小写。
 
@@ -46,7 +46,7 @@ account不区分大小写。
 
 ####获取订阅公众号列表
 ```
-http://whosecard.com:8081/api/getaccounts?key=***
+http://whosecard.com:8081/api/account/list?key=***
 
 account均为小写。
 
@@ -56,7 +56,7 @@ account均为小写。
 
 ####获取订阅公众号数量
 ```
-http://whosecard.com:8081/api/accountnum?key=***
+http://whosecard.com:8081/api/account/count?key=***
 
 返回格式如下：
 {ok: true, "count":100}
