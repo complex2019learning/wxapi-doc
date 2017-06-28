@@ -10,7 +10,7 @@ url请求需带上参数key，每个用户有唯一的key。
 eg：
 回调接口为
 http://test.com/api/receiveExtNotification
-则当WebNotes公众号更新文章，阅读点赞数据时会传送Request Body:
+则当公众号更新文或阅读点赞数据时会传送以下Json格式的Request Body:
 {
   "data": [
     {
