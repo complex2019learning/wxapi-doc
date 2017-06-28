@@ -6,7 +6,7 @@ url请求需带上参数key，每个用户有唯一的key。
 
 ####更新回调接口
 ```
-此接口为POST method，由用户提供，当公众号文章，阅读数，点赞数更新时，会主动调用此接口。
+此接口为POST method，由用户提供，当公众号文章，阅读点赞数更新时，会主动调用此接口。
 eg：
 回调接口为
 http://test.com/api/receiveExtNotification
