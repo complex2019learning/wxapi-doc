@@ -12,7 +12,7 @@ http://whosecard.com:8081/api/account/info?account=webnotes&key=***
 {
 account: "WebNotes",
 uuid: "C1080392D32744FD45596A58F74C7D84",  # 微信公众号内部id，一般用不上
-tags: [  ＃ 公众号标签，仅供参考
+tags: [  # 公众号标签，仅供参考
 	"自媒体人",
 	"TMT个人"
 ],
