@@ -7,11 +7,24 @@ url请求需带上参数key，每个用户有唯一的key。
 ####更新回调接口
 ```
 此接口由用户提供，当公众号更新时，会主动调用此接口，并将公众号account与更新时间timestamp作为query string。
+
+如果返回状态非200，则可通过［主动拉取未发送的更新数据接口］查询。
+
 eg：
 回调接口为
 http://test.com/api/receiveNotification
 则当WebNotes公众号更新时会请求:
 http://test.com/api/receiveNotification?account=WebNotes&ts=1496331127
+```
+
+####主动拉取未发送的更新数据
+```
+http://whosecard.com:8081/api/notification/unsended?key=***
+
+此接口与更新回调接口结合使用，用户可主动拉取最近一小时内未发送（包括发送失败或待发送的数据）的更新列表。
+
+当key校验成功后，会返回如下格式数据：
+{"ok":true, "notifications":[{'account': 'WebNotes', 'ts': 1496331175}]}
 ```
 
 ####主动拉取更新数据
