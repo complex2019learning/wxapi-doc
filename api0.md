@@ -42,7 +42,7 @@ operation参数可取[NEW|UPDATE]：取NEW时表示是新文章，为UPDATE时�
 ```
 http://whosecard.com:8081/api/notification/listExt?key=***
 
-此接口与更新回调接口结合使用，用户可主动拉取最近一个15分钟的更新列表。
+此接口与更新回调接口结合使用，用户可主动拉取最近5分钟的更新列表。
 
 当key校验成功后，会返回如下格式数据：
 {
