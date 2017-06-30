@@ -47,7 +47,7 @@ http://whosecard.com:8081/api/notification/listExt?key=***
 当key校验成功后，会返回如下格式数据：
 {
   "ok":true,
-  "extNotifications":[
+  "notifications":[
     {
       "operation": "NEW",
       "account": "banyuetan-weixin",
