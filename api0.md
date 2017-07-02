@@ -21,9 +21,9 @@ http://test.com/api/receiveExtNotification
       "account": "banyuetan-weixin",
       "title": "【品读】真正的善良，是让大家都体面",
       "url": "http://mp.weixin.qq.com/s?__biz=MjM5OTU4Nzc0Mg==&mid=2658605478&idx=1&sn=713642344f4b87d3b3e8139137b5c822",
-      "timestamp": 1498570320,
-      "clicksCount": 100,
-      "likeCount": 3
+      "timestamp": 1498570320,  #文章发布时间戳
+      "clicksCount": 100,  #阅读数
+      "likeCount": 3  #点赞数
     },
     {
       "operation": "UPDATE",
@@ -56,9 +56,9 @@ http://whosecard.com:8081/api/notification/unsendedExt?key=***
       "account": "banyuetan-weixin",
       "title": "【品读】真正的善良，是让大家都体面",
       "url": "http://mp.weixin.qq.com/s?__biz=MjM5OTU4Nzc0Mg==&mid=2658605478&idx=1&sn=713642344f4b87d3b3e8139137b5c822",
-      "timestamp": 1498570320,
-      "clicksCount": 100,
-      "likeCount": 3
+      "timestamp": 1498570320,  #文章发布时间戳
+      "clicksCount": 100,  #阅读数
+      "likeCount": 3  #点赞数
     }
   ]
 }
@@ -79,9 +79,9 @@ http://whosecard.com:8081/api/notification/listExt?key=***
       "account": "banyuetan-weixin",
       "title": "【品读】真正的善良，是让大家都体面",
       "url": "http://mp.weixin.qq.com/s?__biz=MjM5OTU4Nzc0Mg==&mid=2658605478&idx=1&sn=713642344f4b87d3b3e8139137b5c822",
-      "timestamp": 1498570320,
-      "clicksCount": 100,
-      "likeCount": 3
+      "timestamp": 1498570320,  #文章发布时间戳
+      "clicksCount": 100,  #阅读数
+      "likeCount": 3  #点赞数
     }
   ]
 }
