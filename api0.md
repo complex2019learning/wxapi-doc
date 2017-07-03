@@ -62,6 +62,13 @@ http://whosecard.com:8081/api/notification/unsendedExt?key=***
     }
   ]
 }
+
+如果想自定义取一天内任一段时间内的数据，通过传入查询的开始时间戳start与结束时间戳end（不传则默认结束时间戳为当前时间）.
+自定义时间段不能超过30分钟，即end-start<=1800
+
+eg:
+http://whosecard.com:8081/api/notification/unsendedExt?key=***&start=1499066515&end=1499066615
+
 ```
 
 ####主动拉取更新数据
@@ -85,6 +92,8 @@ http://whosecard.com:8081/api/notification/listExt?key=***
     }
   ]
 }
+
+可自定义取一天内任意时间段的数据，方法同上。
 ```
 
 ####添加公众号
