@@ -6,15 +6,34 @@ url请求需带上参数key，每个用户有唯一的key。
 
 ####更新回调接口
 ```
-此接口由用户提供，当公众号更新时，会主动调用此接口，并将公众号account与更新时间timestamp作为query string。
+此接口为POST method，由用户提供，当公众号更新时，会主动调用此接口，回传数据包括公众号account，更新时间ts，文章列表essays。
+
+对于最新订阅的公众号，只会抓取当前订阅时间以后的文章列表。
 
 如果返回状态非200，则可通过［主动拉取未发送的更新数据接口］查询。
 
 eg：
 回调接口为
 http://test.com/api/receiveNotification
-则当WebNotes公众号更新时会请求:
-http://test.com/api/receiveNotification?account=WebNotes&ts=1496331127
+
+则当公众号更新时会传送如下Json格式的Request Body: (request body被json dumps成了字符串，接收数据后需要进行json格式处理)
+{
+  "data": {
+        "account" : "Learnlord",
+        "ts" : 1500944415,
+        "essays" : [ 
+            {
+                "title" : "他是英国最残暴、最文艺的罪犯,40年间蹲过120座监狱,却用一双手温暖了大家的心",
+                "url" : "http://mp.weixin.qq.com/s?__biz=MjM5OTA5MzQzNQ==&mid=2651161756&idx=3&sn=cd5e6a26abd0804806b0d92b9b4a0a65&scene=0#wechat_redirect"
+            }, 
+            {
+                "title" : "CNN评选出美国Top50中餐厅,看完我只想去大吃特吃!",
+                "url" : "http://mp.weixin.qq.com/s?__biz=MjM5OTA5MzQzNQ==&mid=2651161756&idx=2&sn=c6a37032423c58cfdc5d3509009c725a&scene=0#wechat_redirect"
+            }
+        ]
+    }
+}
+
 ```
 
 ####主动拉取未发送的更新数据

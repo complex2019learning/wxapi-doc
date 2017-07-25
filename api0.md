@@ -13,7 +13,7 @@ url请求需带上参数key，每个用户有唯一的key。
 eg：
 回调接口为
 http://test.com/api/receiveExtNotification
-则当公众号更新文或阅读点赞数据时会传送以下Json格式的Request Body: (data数组在request body中被json dumps成了字符串，接收数据后需要对data进行json格式处理)
+则当公众号更新文或阅读点赞数据时会传送以下Json格式的Request Body: (request body被json dumps成了字符串，接收数据后需要进行json格式处理)
 {
   "data": [
     {
