@@ -10,11 +10,11 @@ http://whosecard.com:8081/api/url/transfer/tmp2forever?url=***&key=***
 
 参数中的url为urlencode后的临时链接（从搜狗获取的文章链接）
 eg:
-http://whosecard.com:8081/api/url/transfer/tmp2forever?url=https%3a%2f%2fmp.weixin.qq.com%2fs%3ftimestamp%3d1495560892%26src%3d3%26ver%3d1%26signature%3diwHBaGJJBumXB4o0dEjdFM-Tm4DoYVUBEbzMGXK9Mb3Zy8Xbv8TJuJRRYq4*XWheCnRL1ZUMtIZeqGJfFMyMlE3hKi-3*7EMlUMaEid3BV4Ip5CjG3uihOI3OSpK07dkjTLw2LXxfp103Kcq4Gkc*I0ekHo4gu*lHbiFG8qRPSg%3d&key=***
+http://whosecard.com:8081/api/url/transfer/tmp2forever?account=heromoba&url=https%3a%2f%2fmp.weixin.qq.com%2fs%3ftimestamp%3d1499228713%26signature%3d%252ABryvh1ys7%252Aw7NILRK8LfHt4ud1tqhEFCATivcmncThCG7G3CsgWG-Yef18Y1YhBDxhFiX-DhxNbOJhMMkmWeSNT5A4W6cGua1X8V3-BybK4eV7Lkb7OIXjrf1ct3v3gf3colF%252A8zdJ1k61J-tGFKABYiJNuNmyBjguKrA7CLvg%253D%26src%3d3%26ver%3d1&key=***
 
 注意⚠️：
 临时链接最好在失效之前转换，否则具有不稳定因素！
-如果真的失效了，则必须在参数中加上biz或者account才能转换，优先传biz参数，使用account具有一定转换失败的风险， 如下：
+如果真的失效了，则必须在参数中加上biz或者account才能转换(两者至少传一个，否则无法转换)，优先传biz参数，使用account具有一定转换失败的风险， 如下：
 http://whosecard.com:8081/api/url/transfer/tmp2forever?url=***&key=***&biz=***&account=***
 ```
 
