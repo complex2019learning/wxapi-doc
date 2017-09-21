@@ -31,7 +31,7 @@ https://mp.weixin.qq.com/s?__biz=MjM5ODIyMTE0MA==&mid=2650969971&idx=1&sn=55f711
 ```
 import requests
 import json
-url = 'http://localhost:8081/api/mock/read?key=***'
+url = 'http://whosecard.com:8081/api/mock/read?key=***'
 data = {
   'key':'***',
   'uin':'***',
