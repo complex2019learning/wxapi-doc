@@ -5,7 +5,7 @@
 接口返回json格式，其中参数ok[true|false]表示是否请求成功.
 
 eg: 
-http://whosecard.com:8081/api/mock/read?key***
+http://whosecard.com:8081/api/mock/read?key=***
 query string中的key为接口认证key。
 
 请求时需要传入的post body:
