@@ -62,6 +62,8 @@ http://whosecard.com:8081/api/notification/list?key=***
 {"ok":true, "notifications":[{'account': 'WebNotes', 'ts': 1496331175}]}
 
 可自定义取一天内任意时间段的数据，方法同上。
+
+如果想取单个公众号的更新列表，可带上account参数，默认最多返回最近三天的更新数据。
 ```
 
 ####添加公众号
