@@ -48,6 +48,8 @@ http://whosecard.com:8081/api/notification/unsended?key=***
 如果想自定义取一天内任一段时间内的数据，通过传入查询的开始时间戳start与结束时间戳end（不传则默认结束时间戳为当前时间）.
 自定义时间段不能超过30分钟，即end-start<=1800
 
+如果想取单个公众号的更新列表，可带上account参数，默认最多返回最近三天的更新数据。
+
 eg:
 http://whosecard.com:8081/api/notification/unsended?key=***&start=1499066515&end=1499066615
 ```
