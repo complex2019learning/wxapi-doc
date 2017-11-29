@@ -16,6 +16,10 @@ http://whosecard.com:8081/api/url/transfer/tmp2forever?account=heromoba&url=http
 临时链接最好在失效之前转换，否则具有不稳定因素！
 如果真的失效了，则必须在参数中加上biz或者account才能转换(两者至少传一个，否则无法转换)，优先传biz参数，使用account具有一定转换失败的风险， 如下：
 http://whosecard.com:8081/api/url/transfer/tmp2forever?url=***&key=***&biz=***&account=***
+
+划重点：如果给的链接是无效的，则会返回：
+{"ok": false, "error": "check_url error"}
+此时不要再提交此链接！
 ```
 
 ####公众号文章短链接转为长链接
