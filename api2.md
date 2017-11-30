@@ -20,6 +20,10 @@ http://whosecard.com:8081/api/url/transfer/tmp2forever?url=***&key=***&biz=***&a
 划重点：如果给的链接是无效的，则会返回：
 {"ok": false, "error": "check_url error"}
 此时不要再提交此链接！
+其它可能返回的error response:
+{"ok": false, "error": "request error"}  # 请求过程出错，可重试
+{"ok": false, "error": "invalid wxkey."}  #  请求过程出错，可重试
+
 ```
 
 ####公众号文章短链接转为长链接

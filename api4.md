@@ -47,4 +47,11 @@ http://whosecard.com:8081/api/msg/ext?url=https%3a%2f%2fmp.weixin.qq.com%2fs%3f_
 
 advertisementNum为该文章的附带广告数量，仅开通广点通的公众号才有。
 advertisementInfo为微信接口返回的广告内容，具体含义参照字面含义。
+
+划重点：如果给的链接是无效的，则error会返回check_url error开头的一串字符串：
+{"ok": false, "error": "check_url error******"}
+例如：
+{"ok": false, "error": "check_url error, 此帐号已被屏蔽, 内容无法查看"}
+
+此时不要再提交此链接！
 ```
