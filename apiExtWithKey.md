@@ -12,7 +12,7 @@ http://120.79.10.233:8081/api/msg/extWithKey?url=***&key=***&wxkey=***&wxuin=***
 
 参数中的url为urlencode后的永久链接
 eg:
-http://whosecard.com:8081/api/msg/ext?url=https%3a%2f%2fmp.weixin.qq.com%2fs%3f__biz%3dMjM5MzI5NTU3MQ%3d%3d%26mid%3d2651456339%26idx%3d1%26sn%3db28ead72f72decc7993d2db6a4a7f437%26scene%3d0%23wechat_redirect&key=***&wxkey=***&wxuin=***
+http://120.79.10.233:8081/api/msg/ext?url=https%3a%2f%2fmp.weixin.qq.com%2fs%3f__biz%3dMjM5MzI5NTU3MQ%3d%3d%26mid%3d2651456339%26idx%3d1%26sn%3db28ead72f72decc7993d2db6a4a7f437%26scene%3d0%23wechat_redirect&key=***&wxkey=***&wxuin=***
 
 返回如下：
 {
