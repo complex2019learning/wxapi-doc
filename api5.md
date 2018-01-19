@@ -9,7 +9,7 @@ url请求需带上参数key，每个用户有唯一的key。
 接口均为GET method。
 
 按公众号搜索： account参数为公众号账号
-http://whosecard.com:8081/api/sogou/weixin2?account=***&start=***&key=***
+http://user.whosecard.com:8081/api/sogou/weixin2?account=***&start=***&key=***
 
 如果抓取成功，会返回如下格式数据：
 {
@@ -28,7 +28,7 @@ http://whosecard.com:8081/api/sogou/weixin2?account=***&start=***&key=***
 }
 
 按关键字搜索： keywordstr为搜索关键字
-http://whosecard.com:8081/api/sogou/weixin2?keywordstr=***&start=***&key=***
+http://user.whosecard.com:8081/api/sogou/weixin2?keywordstr=***&start=***&key=***
 
 如果抓取成功，会返回如下格式数据：
 {
