@@ -15,7 +15,11 @@ url请求需带上参数key，每个用户有唯一的key。
 http://120.79.10.233:8081/api/wx/register/verify/fetch?key=***
 
 如果上传成功，会返回如下格式数据：（verifyUrl参数为辅助链接）
-{'ok': true, 'verifyUrl': 'https://weixin110.qq.com/s/8011677271c'}
+{
+	'ok': true,
+	'verifyUrl': 'https://weixin110.qq.com/s/8011677271c',  # 辅助链接
+	'expiredTS': 1524662283,  # 链接过期的时间戳，为上传时间+300秒
+}
 反之：
 {'ok': false}
 
