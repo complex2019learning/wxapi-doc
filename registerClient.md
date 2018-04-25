@@ -13,7 +13,7 @@ url请求需带上参数key，每个用户有唯一的key。
 接口为GET method。
 
 verifyUrl参数为辅助链接
-http://user.whosecard.com:8081/api/wx/register/verify/upload?key=***&verifyUrl=https%3a%2f%2fweixin110.qq.com%2fs%2febe711c8db3
+http://120.79.10.233:8081/api/wx/register/verify/upload?key=***&verifyUrl=https%3a%2f%2fweixin110.qq.com%2fs%2febe711c8db3
 
 如果上传成功，会返回如下格式数据：
 {'ok': true}
