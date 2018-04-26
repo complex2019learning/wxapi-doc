@@ -1,6 +1,6 @@
 # 微信注册-好友辅助
 
-### 获取一个任务
+### 辅助方获取一个任务
 
 辅助二维码可以转换为链接，格式如： https://weixin110.qq.com/s/ebe711c8db3
 
@@ -24,20 +24,6 @@ http://120.79.10.233:8081/api/wx/register/verify/fetch?key=***
 {'ok': false}
 
 注意！为了防止重复派发，每个任务只会被获取一次，所以不要滥用此接口，尽量获取一次就完成一次！
-```
-
-### 任务完成后提交
-
-```
-接口为GET method。
-
-verifyUrl参数为辅助链接, 在获取任务的时候得到的
-http://120.79.10.233:8081/api/wx/register/verify/done?key=***&verifyUrl=https%3a%2f%2fweixin110.qq.com%2fs%2febe711c8db3
-
-如果上传成功，会返回如下格式数据：
-{'ok': true}
-反之：
-{'ok': false}
 ```
 
 
