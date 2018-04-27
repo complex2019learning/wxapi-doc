@@ -13,7 +13,7 @@ url请求需带上参数key，每个用户有唯一的key。
 接口为GET method。
 
 number为电话号码，verifyUrl参数为辅助链接
-http://120.79.10.233:8081/api/wx/register/verify/upload?key=***&number=17021394832&verifyUrl=https%3a%2f%2fweixin110.qq.com%2fs%2febe711c8db3
+http://120.79.10.233:8081/api/wx/register/verify/upload?key=***&number=17021394832&verifyUrl=https://weixin110.qq.com/s/ebe711c8db3
 
 如果上传成功，会返回如下格式数据：
 {'ok': true}
@@ -28,7 +28,7 @@ http://120.79.10.233:8081/api/wx/register/verify/upload?key=***&number=170213948
 
 verifyUrl参数为辅助链接, 在获取任务的时候得到的
 success=1表示辅助成功，将扣费，如果success=0表示失败，不扣费
-http://120.79.10.233:8081/api/wx/register/verify/done?key=***&verifyUrl=https%3a%2f%2fweixin110.qq.com%2fs%2febe711c8db3&success=1
+http://120.79.10.233:8081/api/wx/register/verify/done?key=***&success=1&verifyUrl=https://weixin110.qq.com/s/ebe711c8db3
 
 对于辅助失败的记录，会逐一进行审核，已确认确实是失败了。
 
