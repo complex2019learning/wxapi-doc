@@ -59,9 +59,9 @@ advertisementInfo为微信接口返回的广告内容，具体含义参照字面
 ```
 
 
-####实时获取公众号文章阅读点赞数据
+####实时获取公众号文章评论数据
 ```
-http://whosecard.com:8081/api/msg/comment?url=***&key=***
+http://user.whosecard.com:8081/api/msg/comment?url=***&key=***
 
 参数中的url为urlencode后的永久链接
 eg:
