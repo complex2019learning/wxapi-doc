@@ -4,6 +4,8 @@ url请求需带上参数key，每个用户有唯一的key。
 
 所有接口均返回json格式，其中参数ok[true|false]表示是否请求成功.
 
+参数中的url为文章链接，长短链接均可，但不能是临时链接。
+
 ####实时获取公众号文章阅读点赞数据
 ```
 http://whosecard.com:8081/api/msg/ext?url=***&key=***
@@ -47,6 +49,54 @@ http://whosecard.com:8081/api/msg/ext?url=https%3a%2f%2fmp.weixin.qq.com%2fs%3f_
 
 advertisementNum为该文章的附带广告数量，仅开通广点通的公众号才有。
 advertisementInfo为微信接口返回的广告内容，具体含义参照字面含义。
+
+划重点：如果给的链接是无效的，则error会返回check_url error开头的一串字符串：
+{"ok": false, "error": "check_url error******"}
+例如：
+{"ok": false, "error": "check_url error, 此帐号已被屏蔽, 内容无法查看"}
+
+此时不要再提交此链接！
+```
+
+
+####实时获取公众号文章阅读点赞数据
+```
+http://whosecard.com:8081/api/msg/comment?url=***&key=***
+
+参数中的url为urlencode后的永久链接
+eg:
+http://whosecard.com:8081/api/msg/comment?url=https%3a%2f%2fmp.weixin.qq.com%2fs%2fmkcNQ14cYaV2VWGywbHCsg&key=***
+
+返回如下：
+
+{
+  'ok': true,
+  'electedComment': [
+    {
+      'id': 5,
+      'my_id': 29,
+      'nick_name': '幻影',
+      'logo_url': 'http://wx.qlogo.cn/mmopen/ajNVdqHZLLDLiadQbicUmG1b0PAugEdM46NOvBrY8LSzl2284msWzdDR99YyHTiaSqfa7s7pZdXg9Brm1wPrK2kAQ/132',
+      'content': '厉害',
+      'create_time': 1526022499,
+      'content_id': '1481712138857742365',
+      'like_id': 10001,
+      'like_num': 1,
+      'like_status': 0,
+      'is_from_friend': 0,
+      'reply': {
+        'reply_list': [
+          
+        ]
+      },
+      'is_from_me': 0,
+      'is_top': 0
+    }
+  ],
+  "electedCommentTotalCnt": 4,
+  "onlyFansCanComment": 4
+}
+
 
 划重点：如果给的链接是无效的，则error会返回check_url error开头的一串字符串：
 {"ok": false, "error": "check_url error******"}
