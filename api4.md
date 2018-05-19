@@ -61,7 +61,7 @@ advertisementInfo为微信接口返回的广告内容，具体含义参照字面
 
 ####2. 实时获取公众号文章评论数据
 ```
-http://user.whosecard.com:8081/api/msg/comment?url=***&key=***
+http://lapi.whosecard.com:8081/api/msg/comment?url=***&key=***
 
 参数中的url为urlencode后的永久链接
 eg:
@@ -86,7 +86,7 @@ http://whosecard.com:8081/api/msg/comment?url=https%3a%2f%2fmp.weixin.qq.com%2fs
       'is_from_friend': 0,
       'reply': {
         'reply_list': [
-          
+
         ]
       },
       'is_from_me': 0,
