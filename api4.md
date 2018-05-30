@@ -48,7 +48,7 @@ http://whosecard.com:8081/api/msg/ext?url=https%3a%2f%2fmp.weixin.qq.com%2fs%3f_
   	"commentCount": 470,  # 评论总数
   	"onlyFansCanComment": false,
   	"commentEnabled": 1,
-  	"articleHtml" : "文章页的html内容" # 当query string参数带上needArticleHtml=1时，会返回此字段，默认不返回
+  	"articleJson" : "json格式的文章信息" # 当query string参数带上needArticleJson=1时，会返回此字段，默认不返回
  }
 
 advertisementNum为该文章的附带广告数量，仅开通广点通的公众号才有。
