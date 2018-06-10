@@ -2,7 +2,7 @@
 
 #### 相关接口及收费价格如下：[费用查询接口](https://coding.net/u/iwoods/p/wxapi-doc/git/blob/master/pay.md?public=true)
 
-##### 公众号即时更新接口， 一个公众号 0.1¥／天，[接口文档](https://coding.net/u/iwoods/p/wxapi-doc/git/blob/master/api1.md?public=true)
+##### 公众号即时更新接口， [接口文档](https://coding.net/u/iwoods/p/wxapi-doc/git/blob/master/api1.md?public=true)
 
 ```
 接口描述：
@@ -23,11 +23,13 @@
 如果无法接受以上须知，请不要使用这个服务！！！
 ```
 
-##### 文章临时链接转永久链接／短链接转长链接，一次0.03¥，[接口文档](https://coding.net/u/iwoods/p/wxapi-doc/git/blob/master/api2.md?public=true)
+##### 从微信app侧获取公众号历史页，[接口文档](https://coding.net/u/iwoods/p/wxapi-doc/git/blob/master/api-profile.md?public=true)
 
-##### 获取公众账号信息，如根据account获取账号信息， 一次0.03¥，[接口文档](https://coding.net/u/iwoods/p/wxapi-doc/git/blob/master/api3.md?public=true)
+##### 文章临时链接转永久链接／短链接转长链接，[接口文档](https://coding.net/u/iwoods/p/wxapi-doc/git/blob/master/api2.md?public=true)
 
-##### 实时获取文章评论/阅读点赞数， 一次0.08¥，[接口文档](https://coding.net/u/iwoods/p/wxapi-doc/git/blob/master/api4.md?public=true)
+##### 获取公众账号信息，如根据account获取账号信息，[接口文档](https://coding.net/u/iwoods/p/wxapi-doc/git/blob/master/api3.md?public=true)
+
+##### 实时获取文章评论/阅读点赞数，[接口文档](https://coding.net/u/iwoods/p/wxapi-doc/git/blob/master/api4.md?public=true)
 
 ##### 获取搜狗公众号/关键字最近N天内的更新文章，[接口文档](https://coding.net/u/iwoods/p/wxapi-doc/git/blob/master/api5.md?public=true)
 ```
