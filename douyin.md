@@ -6,7 +6,7 @@ url请求需带上参数key，每个用户有唯一的key。
 
 ####1. 实时获取抖音视频detail信息（不包含播放量）
 ```
-http://lapi.whosecard.com:8081/api/douyin/aweme/detail?key=***&aweme_id=6580087189395213581
+http://whosecard.com:8081/api/douyin/aweme/detail?key=***&aweme_id=6580087189395213581
 
 返回如下：
 {
