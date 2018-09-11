@@ -4,7 +4,22 @@ url请求需带上参数key，每个用户有唯一的key。
 
 所有接口均返回json格式，其中参数ok[true|false]表示是否请求成功.
 
-####1. 实时获取抖音视频detail信息（不包含播放量）
+
+####1. 实时获取up主发布的视频列表
+```
+http://user.whosecard.com:8081/api/douyin/aweme/post?key=***&user_id=96637069360
+
+返回如下：
+{
+  "ok": true,
+  "result": {
+    ... # 返回值与抖音接口一样，字段比较多，按字面意思理解即可
+  }
+}
+```
+
+
+####2. 实时获取单个抖音视频detail信息（不包含播放量）
 ```
 http://whosecard.com:8081/api/douyin/aweme/detail?key=***&aweme_id=6580087189395213581
 
@@ -28,3 +43,4 @@ result包含了抖音返回的所有字段数据，除了statistics字段外还�
 
 划重点：请传入有效的aweme_id
 ```
+
