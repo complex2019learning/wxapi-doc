@@ -18,8 +18,20 @@ http://user.whosecard.com:8081/api/douyin/aweme/post?key=***&user_id=96637069360
 }
 ```
 
+####2. 实时获取挑战视频列表
+```
+http://user.whosecard.com:8081/api/douyin/aweme/challenge?key=***&ch_id=1611823344632835
 
-####2. 实时获取单个抖音视频detail信息（不包含播放量）
+返回如下：
+{
+  "ok": true,
+  "result": {
+    ... # 返回值与抖音接口一样，字段比较多，按字面意思理解即可
+  }
+}
+```
+
+####3. 实时获取单个抖音视频detail信息（不包含播放量）
 ```
 http://whosecard.com:8081/api/douyin/aweme/detail?key=***&aweme_id=6580087189395213581
 
