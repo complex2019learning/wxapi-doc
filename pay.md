@@ -16,6 +16,15 @@ response:
 	ok: true,
 	balance: 100  # 单位元
 }
+
+获取某日的接口调用详情：
+http://user.whosecard.com:8081/api/user/consumeDetail?key=***&dt=20181026
+
+response:
+{
+	ok: true,
+	consumeDetail: {}  # 各接口消费详情
+}
 ```
 
 #### 后付费
