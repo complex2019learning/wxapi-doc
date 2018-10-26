@@ -20,6 +20,8 @@ response:
 获取某日的接口调用详情：
 http://user.whosecard.com:8081/api/user/consumeDetail?key=***&dt=20181026
 
+想要查询指定日期的消费详情，只需传对于的dt参数即可，格式为: %Y%m%d, 如20181026
+
 response:
 {
 	ok: true,
