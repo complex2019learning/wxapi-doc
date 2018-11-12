@@ -19,6 +19,7 @@ http://whosecard.com:8081/api/msg/ext?url=https%3a%2f%2fmp.weixin.qq.com%2fs%3f_
 	"ok": true,
 	"clicksCount": 56602,
 	"likeCount": 196,
+	"top": 1,  # 当前文章在发布时的位置，从1开始计数
 	"advertisementNum": 1,
 	"advertisementInfo": [
 	   {
@@ -65,7 +66,7 @@ advertisementInfo为微信接口返回的广告内容，具体含义参照字面
 
 ####2. 实时获取公众号文章评论数据
 ```
-http://lapi.whosecard.com:8081/api/msg/comment?url=***&key=***
+http://whosecard.com:8081/api/msg/comment?url=***&key=***
 
 参数中的url为urlencode后的永久链接
 eg:
