@@ -7,7 +7,7 @@ url请求需带上参数key，每个用户有唯一的key。
 
 ####1. 实时获取up主发布的视频列表（按时间排序）
 ```
-http://user.whosecard.com:8081/api/douyin/aweme/post?key=***&user_id=96637069360
+http://whosecard.com:8081/api/douyin/aweme/post?key=***&user_id=96637069360
 
 如果要翻页，则需要传入max_cursor参数，此参数在前一页的请求中会返回，每次翻页都会更新。
 
@@ -22,7 +22,7 @@ http://user.whosecard.com:8081/api/douyin/aweme/post?key=***&user_id=96637069360
 
 ####2. 实时获取挑战视频列表（按热度排序）
 ```
-http://user.whosecard.com:8081/api/douyin/aweme/challenge?key=***&ch_id=1611823344632835
+http://whosecard.com:8081/api/douyin/aweme/challenge?key=***&ch_id=1611823344632835
 
 如果要翻页，需要传入cursor参数（这里的参数跟前面的max_cursor不一样，不要搞混了），此参数在前一页的请求中会返回，每次翻页都会更新。
 返回如下：
@@ -36,7 +36,7 @@ http://user.whosecard.com:8081/api/douyin/aweme/challenge?key=***&ch_id=16118233
 
 ####3. 获取抖音UP主详情页
 ```
-http://user.whosecard.com:8081/api/douyin/aweme/user/detail?user_id=102020882079&key=***
+http://whosecard.com:8081/api/douyin/aweme/user/detail?user_id=102020882079&key=***
 
 返回如下：
 {
@@ -49,7 +49,7 @@ http://user.whosecard.com:8081/api/douyin/aweme/user/detail?user_id=102020882079
 
 ####4. 获取挑战详情页
 ```
-http://user.whosecard.com:8081/api/douyin/aweme/challenge/detail?ch_id=1612674164817944&key=***
+http://whosecard.com:8081/api/douyin/aweme/challenge/detail?ch_id=1612674164817944&key=***
 
 返回如下：
 {
