@@ -85,3 +85,20 @@ result包含了抖音返回的所有字段数据，除了statistics字段外还�
 划重点：请传入有效的aweme_id
 ```
 
+####6. 获取抖音UP主商品橱窗列表
+```
+http://whosecard.com:8081/api/douyin/aweme/promotion?user_id=95899249695&cursor=0&key=***
+
+每次返回10个商品信息，如果要翻页，则需要传入cursor参数，第一次请求时cursor为0，之后每次翻页传的cursor都要加10。
+比如当cursor=0时，返回第1-10条商品信息。
+比如当cursor=10时，返回第11-20条商品信息。
+以此类推，每次请求结果可以根据返回的has_more参数判断是否需要翻页。
+
+返回如下：
+{
+  "ok": true,
+  "result": {
+    ... # 返回值与抖音接口一样，字段比较多，按字面意思理解即可
+  }
+}
+```
