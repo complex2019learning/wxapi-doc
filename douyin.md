@@ -102,3 +102,28 @@ http://whosecard.com:8081/api/douyin/aweme/promotion?user_id=95899249695&cursor=
   }
 }
 ```
+
+
+####7. 获取抖音UP主商品橱窗列表中的单个商品详情
+```
+http://whosecard.com:8081/api/douyin/haohuo/product/item?key=***&url=https%3a%2f%2fhaohuo.snssdk.com%2fviews%2fproduct%2fitem2%3fid%3d3320163565905801015%26origin_type%3d3002002000%26origin_id%3d95899249695_3320163565905801015
+
+url参数需要urlencode编码，此参数来自于【获取抖音UP主商品橱窗列表】接口的商品链接url字段。
+如下：
+'url': 'https://haohuo.snssdk.com/views/product/item2?id=3320163565905801015&origin_type=3002002000&origin_id=95899249695_3320163565905801015'
+或
+'url': 'https://s.click.taobao.com/t?e=m%3D2%26s%3DXpYFZRUPba5w4vFB6t2Z2ueEDrYVVa64yK8Cckff7TVRAdhuF14FMXPeQLel4XWaRitN3%2FurF3wp%2B5CLQixkpmMjmk35KXe80WQOT8AWdaDU9K%2BgeJF8ih8X7G7Q37Baejw3KMSaN0DiIDPp%2FuN7%2FIwe6%2FtGg2%2FRjN4f8DSxNxsSISXfWWxKofCLZcGV6BP8sPrAMD3nCdJd1arOlEmD0fcENMllU8QC0j0E%2F7GT%2BtY%2B5QowgvHJPA%3D%3D&union_lens=lensId:0b1b469b_0be5_16813f21f69_5f6c'
+
+目前只支持url为haohuo的商品落地页（第一种），暂不支持淘宝页商品详情（第二种）。
+
+对于haohuo商品的详情数据，返回如下：
+{
+  "ok": true,
+  "result": {
+    "ajaxstaticitem": {***},  # 商品的静态信息
+    "ajaxitem": {***}  # 商品的动态信息
+  }
+}
+
+ps：返回的ajaxstaticitem与ajaxitem内容实际上是来自两个接口的，共同组成完整的商品详情信息。
+```
