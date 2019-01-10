@@ -1,0 +1,74 @@
+#小红书接口
+
+url请求需带上参数key，每个用户有唯一的key。
+
+所有接口均返回json格式，其中参数ok[true|false]表示是否请求成功.
+
+
+####1. 获取单个笔记详细数据
+```
+http://whosecard.com:8081/api/xiaohongshu/note/detail?note_id=***&key=***
+
+返回如下：
+{
+  "ok": true,
+  "result": {
+    ... # 返回值与小红书接口一样，字段比较多，按字面意思理解即可
+  }
+}
+```
+
+####2. 获取用户笔记列表
+```
+http://whosecard.com:8081/api/xiaohongshu/user/notes?user_id=***&page=1&key=***
+
+如果要翻页，需要传入page参数，从1开始，每页最多15条。
+返回如下：
+{
+  "ok": true,
+  "result": {
+    ... # 返回值与小红书接口一样
+  }
+}
+```
+
+####3. 获取用户个人页信息
+```
+http://whosecard.com:8081/api/xiaohongshu/user/info?user_id=***&key=***
+
+返回如下：
+{
+  "ok": true,
+  "result": {
+    ... # 返回值与小红书接口一样
+  }
+}
+```
+
+####4. 获取商城店铺下的商品列表
+```
+http://whosecard.com:8081/api/xiaohongshu/store/items?store_id=***&page=1&key=***
+
+如果要翻页，需要传入page参数，从1开始，每页最多20条。
+返回如下：
+{
+  "ok": true,
+  "result": {
+    ... # 返回值与小红书接口一样
+  }
+}
+```
+
+####5. 关键字搜索列表
+```
+http://whosecard.com:8081/api/xiaohongshu/search/notes?keyword=口红&key=***&page=1
+
+如果要翻页，需要传入page参数，从1开始，每页最多20条。
+返回如下：
+{
+  "ok": true,
+  "result": {
+    ... # 返回值与小红书接口一样
+  }
+}
+```
