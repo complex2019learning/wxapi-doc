@@ -34,3 +34,12 @@ http://whosecard.com:8081/api/url/transfer/short2long?url=***&key=***
 eg:
 http://whosecard.com:8081/api/url/transfer/short2long?url=https%3a%2f%2fmp.weixin.qq.com%2fs%2fAuyufPtU1UeusDS6B34VZg&key=***
 ```
+
+####公众号文章长链接转为短链接
+```
+http://whosecard.com:8081/api/url/transfer/long2short?url=***&key=***
+
+参数中的url为urlencode后的长链接
+eg:
+http://whosecard.com:8081/api/url/transfer/long2short?url=https%3a%2f%2fmp.weixin.qq.com%2fs%3f__biz%3dMjM5MzI5NTU3MQ%3d%3d%26mid%3d2651456339%26idx%3d1%26sn%3db28ead72f72decc7993d2db6a4a7f437%26scene%3d0%23wechat_redirect&key=***
+```
