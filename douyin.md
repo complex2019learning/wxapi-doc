@@ -5,7 +5,7 @@ url请求需带上参数key，每个用户有唯一的key。
 所有接口均返回json格式，其中参数ok[true|false]表示是否请求成功.
 
 
-####1. 实时获取up主发布的视频列表（按时间排序）
+#### 实时获取up主发布的视频列表（按时间排序）
 ```
 http://whosecard.com:8081/api/douyin/aweme/post?key=***&user_id=96637069360
 
@@ -20,7 +20,7 @@ http://whosecard.com:8081/api/douyin/aweme/post?key=***&user_id=96637069360
 }
 ```
 
-####2. 实时获取挑战视频列表（按热度排序）
+#### 实时获取挑战视频列表（按热度排序）
 ```
 http://whosecard.com:8081/api/douyin/aweme/challenge?key=***&ch_id=1611823344632835
 
@@ -34,7 +34,7 @@ http://whosecard.com:8081/api/douyin/aweme/challenge?key=***&ch_id=1611823344632
 }
 ```
 
-####3. 获取抖音UP主详情页
+#### 获取抖音UP主详情页
 ```
 http://whosecard.com:8081/api/douyin/aweme/user/detail?user_id=102020882079&key=***
 
@@ -47,7 +47,7 @@ http://whosecard.com:8081/api/douyin/aweme/user/detail?user_id=102020882079&key=
 }
 ```
 
-####4. 获取挑战详情页
+#### 获取挑战详情页
 ```
 http://whosecard.com:8081/api/douyin/aweme/challenge/detail?ch_id=1612674164817944&key=***
 
@@ -60,7 +60,7 @@ http://whosecard.com:8081/api/douyin/aweme/challenge/detail?ch_id=16126741648179
 }
 ```
 
-####5. 实时获取单个抖音视频detail信息（不包含播放量）
+#### 实时获取单个抖音视频detail信息（不包含播放量）
 ```
 http://whosecard.com:8081/api/douyin/aweme/detail?key=***&aweme_id=6580087189395213581
 
@@ -85,7 +85,7 @@ result包含了抖音返回的所有字段数据，除了statistics字段外还�
 划重点：请传入有效的aweme_id
 ```
 
-####6. 获取抖音UP主商品橱窗列表
+#### 获取抖音UP主商品橱窗列表
 ```
 http://whosecard.com:8081/api/douyin/aweme/promotion?user_id=95899249695&cursor=0&key=***
 
@@ -104,7 +104,7 @@ http://whosecard.com:8081/api/douyin/aweme/promotion?user_id=95899249695&cursor=
 ```
 
 
-####7. 从haohuo获取单个商品详情
+#### 从haohuo获取单个商品详情
 ```
 http://whosecard.com:8081/api/douyin/haohuo/product/item?key=***&url=https%3a%2f%2fhaohuo.snssdk.com%2fviews%2fproduct%2fitem2%3fid%3d3320163565905801015%26origin_type%3d3002002000%26origin_id%3d95899249695_3320163565905801015
 
@@ -123,4 +123,37 @@ url参数需要urlencode编码，此参数来自于【获取抖音UP主商品橱
 }
 
 ps：返回的ajaxstaticitem与ajaxitem内容实际上是来自两个接口的，共同组成完整的商品详情信息。
+```
+
+#### 根据poi_id获取地点详情页数据
+```
+http://whosecard.com:8081/api/douyin/aweme/poi/detail?poi_id=***&key=***
+
+poi_id为地点的id，如：B0FFJ93NTT
+获取地点的详情页数据，包括评分，坐标信息等等
+
+返回如下：
+{
+  "ok": true,
+  "result": {
+    ... # 返回值与抖音接口一样，字段比较多，按字面意思理解即可
+  }
+}
+```
+
+
+#### 根据poi_id获取地点发布的视频列表
+```
+http://whosecard.com:8081/api/douyin/aweme/poi/aweme?poi_id=***&cursor=**&key=***
+
+poi_id为地点的id，如：B0FFJ93NTT
+cursor在翻页时会用到，初始默认为0，如果前一页请求返回的has_more=1，取cursor返回值可获取下一页数据
+
+返回如下：
+{
+  "ok": true,
+  "result": {
+    ... # 返回值与抖音接口一样，字段比较多，按字面意思理解即可
+  }
+}
 ```
