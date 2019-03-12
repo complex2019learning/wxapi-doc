@@ -125,6 +125,24 @@ url参数需要urlencode编码，此参数来自于【获取抖音UP主商品橱
 ps：返回的ajaxstaticitem与ajaxitem内容实际上是来自两个接口的，共同组成完整的商品详情信息。
 ```
 
+#### 抖音搜索
+```
+http://whosecard.com:8081/api/douyin/aweme/search?keyword=***&search_source=***&key=***
+
+keyword为搜索关键词，如：北京坊
+search_source为搜索类型，目前支持以下取值：
+	video_search: 搜索视频
+	poi: 搜索地点
+
+返回如下：
+{
+  "ok": true,
+  "result": {
+    ... # 返回值与抖音接口一样，字段比较多，按字面意思理解即可
+  }
+}
+```
+
 #### 根据poi_id获取地点详情页数据
 ```
 http://whosecard.com:8081/api/douyin/aweme/poi/detail?poi_id=***&key=***
