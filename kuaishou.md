@@ -71,7 +71,7 @@ photoId是视频的唯一数字id，如：5189835632447473584
 }
 ```
 
-####3. 获取小店商品列表
+#### 获取小店商品列表
 ```
 http://whosecard.com:8081/api/kuaishou/grocery/product?userId=358250606&page=1&key=***
 
@@ -119,3 +119,37 @@ pcursor用于翻页，第一页不用填，返回结果的pcursor值为下一页
   }
 }
 ```
+
+#### 获取tag详情页（app版）
+```
+http://whosecard.com:8081/api/kuaishou/tag/info?tag=手机摄影&key=***
+
+tag为指定话题参数。
+
+返回如下：
+{
+  "ok": true,
+  "result": {
+    ... # 返回值与官方接口一样
+  }
+}
+```
+
+#### location poi接口（app版）
+```
+http://whosecard.com:8081/api/kuaishou/location/poi?poiId=***&subPath=***&pcursor=***&key=***
+
+poiId为位置id，如：68088943
+subPath可取值为: detail与feed，分别代表详情页与feed页。
+当subPath=feed时，pcursor用于翻页，第一页不用填，返回结果的pcursor值为下一页的请求参数。
+
+返回如下：
+{
+  "ok": true,
+  "result": {
+    ... # 返回值与官方接口一样
+  }
+}
+```
+
+
