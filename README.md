@@ -51,6 +51,10 @@
 
 ##### 快手相关接口，[接口文档](https://dev.tencent.com/u/iwoods/p/wxapi-doc/git/blob/master/kuaishou.md)
 
+#### bilibili相关接口，[接口文档](https://dev.tencent.com/u/iwoods/p/wxapi-doc/git/blob/master/bilibili.md)
+
+#### zhihu相关接口，[接口文档](https://dev.tencent.com/u/iwoods/p/wxapi-doc/git/blob/master/zhihu.md)
+
 ///////////////////////////////////////////////////////////
 
 所有接口均可先免费试用，满意后再付费使用。
