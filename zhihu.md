@@ -1,4 +1,4 @@
-#zhihu接口
+#知乎接口
 
 url请求需带上参数key，每个用户有唯一的key。
 
@@ -28,4 +28,9 @@ urlToken=用户token，如 zhouyuan
 api=question
 offset：用于翻页，下一页的offset参数使用上一页翻回结果的paging.next值
 sortBy: 回答排序，可取值default/updated，默认去default
+
+搜索页：
+api=search
+q=搜索关键词
+offset：用于翻页，下一页的offset参数使用上一页翻回结果的paging.next值
 ```

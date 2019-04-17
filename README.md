@@ -51,9 +51,11 @@
 
 ##### 快手相关接口，[接口文档](https://dev.tencent.com/u/iwoods/p/wxapi-doc/git/blob/master/kuaishou.md)
 
-#### bilibili相关接口，[接口文档](https://dev.tencent.com/u/iwoods/p/wxapi-doc/git/blob/master/bilibili.md)
+#### b站相关接口，[接口文档](https://dev.tencent.com/u/iwoods/p/wxapi-doc/git/blob/master/bilibili.md)
 
-#### zhihu相关接口，[接口文档](https://dev.tencent.com/u/iwoods/p/wxapi-doc/git/blob/master/zhihu.md)
+#### 知乎相关接口，[接口文档](https://dev.tencent.com/u/iwoods/p/wxapi-doc/git/blob/master/zhihu.md)
+
+#### 头条相关接口，[接口文档](https://dev.tencent.com/u/iwoods/p/wxapi-doc/git/blob/master/toutiao.md)
 
 ///////////////////////////////////////////////////////////
 
