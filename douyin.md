@@ -82,6 +82,24 @@ http://whosecard.com:8081/api/douyin/aweme/detail?key=***&aweme_id=6580087189395
 
 result包含了抖音返回的所有字段数据，除了statistics字段外还会返回其它字段，按照字面意思理解即可。
 
+当视频不存在时，则返回如下：
+{
+  "cost": true,
+  "error": "作品不存在",
+  "ok": false,
+  "result": {
+    "extra": {
+      "fatal_item_ids": [],
+      "logid": "20190424113225010016028077357335",
+      "now": 1556076745000
+    },
+    "log_pb": {
+      "impr_id": "20190424113225010016028077357335"
+    },
+    "status_code": 0
+  }
+}
+
 划重点：请传入有效的aweme_id
 ```
 

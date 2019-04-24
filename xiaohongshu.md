@@ -16,6 +16,18 @@ http://whosecard.com:8081/api/xiaohongshu/note/detail?note_id=***&key=***
     ... # 返回值与小红书接口一样，字段比较多，按字面意思理解即可
   }
 }
+
+当作品不存在时，则返回如下：
+{
+  "cost": true,
+  "error": "作品不存在",
+  "ok": false,
+  "result": {
+    "msg": "",
+    "result": -1,
+    "success": false
+  }
+}
 ```
 
 ####2. 获取用户笔记列表
