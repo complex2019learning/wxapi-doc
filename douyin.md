@@ -115,6 +115,7 @@ http://whosecard.com:8081/api/douyin/aweme/comment?key=***&aweme_id=***
     ... # 返回值与抖音接口一样，字段比较多，按字面意思理解即可
   }
 }
+```
 
 #### 获取抖音UP主商品橱窗列表
 ```
