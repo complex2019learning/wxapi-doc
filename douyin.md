@@ -103,6 +103,19 @@ result包含了抖音返回的所有字段数据，除了statistics字段外还�
 划重点：请传入有效的aweme_id
 ```
 
+#### 获取视频评论列表
+```
+http://whosecard.com:8081/api/douyin/aweme/comment?key=***&aweme_id=***
+
+如果要翻页，需要传入cursor参数（这里的参数跟前面的max_cursor不一样，不要搞混了），此参数在前一页的请求中会返回，每次翻页都会更新。
+返回如下：
+{
+  "ok": true,
+  "result": {
+    ... # 返回值与抖音接口一样，字段比较多，按字面意思理解即可
+  }
+}
+
 #### 获取抖音UP主商品橱窗列表
 ```
 http://whosecard.com:8081/api/douyin/aweme/promotion?user_id=95899249695&cursor=0&key=***
