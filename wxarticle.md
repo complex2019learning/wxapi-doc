@@ -15,4 +15,6 @@ http://whosecard.com:8081/api/wx/article?url=https://mp.weixin.qq.com/s/MHMyuGzd
 	"ok": true,
 	"result": {***}
  }
+ 
+ 默认返回的是json化之后的文章数据，如果只想要原始html页面，可带上参数needJson=0
 ```
