@@ -25,7 +25,7 @@ http://whosecard.com:8081/api/url/transfer/tmp2forever?url=***&key=***&biz=***&a
 }
 
 划重点：如果给的链接是无效的，则会返回：
-{"ok": true, "url": null, "error": "链接无效"}
+{"ok": false, "error": "check_url error", "cost": true}
 此时会正常收费，所以不要再重复提交此无效链接！
 
 其它可能返回的error response:

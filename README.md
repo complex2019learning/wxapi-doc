@@ -2,6 +2,8 @@
 
 所有接口均返回json格式，其中参数ok[true|false]表示是否请求成功，当ok=false时，会返回对应的error字段.
 
+所有接口只要返回ok=true或者cost=true（cost字段不一定返回，不返回的话默认为false），就表示请求有效，会进行收费。
+
 ### 相关接口及收费价格如下：[费用查询接口](https://dev.tencent.com/u/iwoods/p/wxapi-doc/git/blob/master/pay.md)
 
 #### 从微信app侧获取公众号历史页，[接口文档](https://dev.tencent.com/u/iwoods/p/wxapi-doc/git/blob/master/api-profile.md)
