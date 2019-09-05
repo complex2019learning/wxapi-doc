@@ -4,6 +4,35 @@ url请求需带上参数key，每个用户有唯一的key。
 
 所有接口均返回json格式，其中参数ok[true|false]表示是否请求成功.
 
+## 用这个最新的
+
+```
+http://whosecard.com:8081/api/wx/articles?biz=***&key=***
+
+eg:
+http://whosecard.com:8081/api/wx/articles?biz=MjM5ODIyMTE0MA==&key=***
+
+返回如下：
+{
+	"ok": true,
+	"articles": {
+	  "content": "文章摘要",
+      "cover": "http://mmbiz.qpic.cn/mmbiz/IMSWclibDr4TiaOR3LA552QzKkdJapQrkVjO0FWkpeRcDBBDq39l7gJ2E8YBVwPZ3L28GOU5S3dvlv4vuibScWsTg/0", # 封面图链接
+      "time": 1422525249,  # 发布时间
+      "title": "文章标题",
+      "url": "https://mp.weixin.qq.com/s?__biz=***" # 文章链接
+	},
+	...
+ }
+
+ 默认最多返回最近十次发文（⚠️不是十篇也不是十天，是十次）
+
+ 如果需要翻页，需要带上offset参数，如offset=10，则返回从第11次开始的10次文章，此参数与微信接口的offset参数含义一致。
+
+如果是接口本身导致的失败则不会扣费，建议请求失败时设置最大重试次数。
+```
+
+## 此接口正在修复中，请暂停使用
 ```
 http://whosecard.com:8081/api/wx/profile?biz=***&key=***
 
