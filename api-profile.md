@@ -14,21 +14,19 @@ http://whosecard.com:8081/api/wx/articles?biz=MjM5ODIyMTE0MA==&key=***
 
 返回如下：
 {
-	"ok": true,
-	"articles": [
-    {
-      "content": "欢迎点击上方的“华尔街日报中文网”关注我们1月24日，百度在北京首都体育馆举办年会，公司创始人李彦宏身披“黄",
-      "cover": "http://mmbiz.qpic.cn/mmbiz/IMSWclibDr4T4gcX6FzS6RiaeHy135yylRsU9kCYibabkWcLgibJa6HqHDAptmZuO0icc1uRk0tAQiciaTVsUEicWmFw3w/0",
-      "time": 1423215709,
-      "title": "专栏 | 中国互联网年会盛筵说明什么？",
-      "url": "https://mp.weixin.qq.com/s?__biz=MTYzMjQ3NTYwMQ==&mid=204045670&idx=1&sn=8e6b09e428cdfcecfa018382d04e6647#rd"
-    },
-	...
-	]
- }
+    "ok": true,
+    "articles": [
+        {
+            "content": "欢迎点击上方的“华尔街日报中文网”关注我们1月24日，百度在北京首都体育馆举办年会，公司创始人李彦宏身披“黄",
+            "cover": "http://mmbiz.qpic.cn/mmbiz/IMSWclibDr4T4gcX6FzS6RiaeHy135yylRsU9kCYibabkWcLgibJa6HqHDAptmZuO0icc1uRk0tAQiciaTVsUEicWmFw3w/0",
+            "time": 1423215709,
+            "title": "专栏 | 中国互联网年会盛筵说明什么？",
+            "url": "https://mp.weixin.qq.com/s?__biz=MTYzMjQ3NTYwMQ==&mid=204045670&idx=1&sn=8e6b09e428cdfcecfa018382d04e6647#rd"
+        },
+        ...
+    ]
+}
  
- 
-
  默认最多返回最近十次发文（⚠️不是十篇也不是十天，是十次）
 
  如果需要翻页，需要带上offset参数，如offset=10，则返回从第11次开始的10次文章，此参数与微信接口的offset参数含义一致。
