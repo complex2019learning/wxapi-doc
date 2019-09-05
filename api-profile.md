@@ -15,14 +15,15 @@ http://whosecard.com:8081/api/wx/articles?biz=MjM5ODIyMTE0MA==&key=***
 返回如下：
 {
 	"ok": true,
-	"articles": {
-	  "content": "文章摘要",
-      "cover": "http://mmbiz.qpic.cn/mmbiz/IMSWclibDr4TiaOR3LA552QzKkdJapQrkVjO0FWkpeRcDBBDq39l7gJ2E8YBVwPZ3L28GOU5S3dvlv4vuibScWsTg/0", # 封面图链接
-      "time": 1422525249,  # 发布时间
-      "title": "文章标题",
-      "url": "https://mp.weixin.qq.com/s?__biz=***" # 文章链接
+	"articles": [{
+		"content": "文章摘要",
+		"cover": "http://mmbiz.qpic.cn/mmbiz/IMSWclibDr4TiaOR3LA552QzKkdJapQrkVjO0FWkpeRcDBBDq39l7gJ2E8YBVwPZ3L28GOU5S3dvlv4vuibScWsTg/0", # 封面图链接
+		"time": 1422525249,  # 发布时间
+		"title": "文章标题",
+		"url": "https://mp.weixin.qq.com/s?__biz=***" # 文章链接
 	},
 	...
+	]
  }
 
  默认最多返回最近十次发文（⚠️不是十篇也不是十天，是十次）
