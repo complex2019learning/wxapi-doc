@@ -23,7 +23,7 @@ http://whosecard.com:8081/api/wx/articles?biz=MjM5ODIyMTE0MA==&key=***
         {
             "content": "欢迎点击上方的“华尔街日报中文网”关注我们1月24日，百度在北京首都体育馆举办年会，公司创始人李彦宏身披“黄",
             "cover": "http://mmbiz.qpic.cn/mmbiz/IMSWclibDr4T4gcX6FzS6RiaeHy135yylRsU9kCYibabkWcLgibJa6HqHDAptmZuO0icc1uRk0tAQiciaTVsUEicWmFw3w/0",
-            "time": 1423215709, # ⚠️此处为文章创建时间，不等于文章发布时间，如果要获取发布时间，可参考【文章详情接口】
+            "time": 1423215709, # ⚠️此处为推送提交时间，不等于文章发布时间，如果要获取发布时间，可参考【文章详情接口】
             "title": "专栏 | 中国互联网年会盛筵说明什么？",
             "url": "https://mp.weixin.qq.com/s?__biz=MTYzMjQ3NTYwMQ==&mid=204045670&idx=1&sn=8e6b09e428cdfcecfa018382d04e6647#rd"
         },
