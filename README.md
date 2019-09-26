@@ -1,5 +1,7 @@
 # api
 
+[官网介绍](http://www.whosecard.com?from=api-doc)
+
 所有接口均返回json格式，其中参数ok[true|false]表示是否请求成功，当ok=false时，会返回对应的error字段.
 
 所有接口只要返回ok=true或者cost=true（cost字段不一定返回，不返回的话默认为false），就表示请求有效，会进行收费。
