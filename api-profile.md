@@ -38,7 +38,7 @@ http://whosecard.com:8081/api/wx/articles?biz=MjM5ODIyMTE0MA==&key=***
 如果是接口本身导致的失败则不会扣费，建议请求失败时设置最大重试次数。
 ```
 
-## 此接口当前返回字段过于原始，可能会有所改动，不建议使用
+## 此接口即将下线，请新用户不要使用，老用户尽快迁移到新接口
 ```
 http://whosecard.com:8081/api/wx/profile?biz=***&key=***
 
