@@ -1,10 +1,10 @@
-#公众号链接转换接口
+# 公众号链接转换接口
 
 url请求需带上参数key，每个用户有唯一的key。
 
 所有接口均返回json格式，其中参数ok[true|false]表示是否请求成功.
 
-####公众号文章临时链接转为永久链接
+#### 公众号文章临时链接转为永久链接
 ```
 http://whosecard.com:8081/api/url/transfer/tmp2forever?url=***&key=***
 
@@ -36,7 +36,7 @@ http://whosecard.com:8081/api/url/transfer/tmp2forever?url=***&key=***&biz=***&a
 {'ok': false, 'error': 'request too fast.'}  # 请求太快，请放慢频率
 ```
 
-####公众号文章短链接转为长链接
+#### 公众号文章短链接转为长链接
 ```
 http://whosecard.com:8081/api/url/transfer/short2long?url=***&key=***
 
@@ -53,7 +53,7 @@ http://whosecard.com:8081/api/url/transfer/short2long?url=https%3a%2f%2fmp.weixi
 ```
 
 
-####公众号文章长链接转为短链接
+#### 公众号文章长链接转为短链接
 ```
 http://whosecard.com:8081/api/url/transfer/long2short?url=***&key=***
 

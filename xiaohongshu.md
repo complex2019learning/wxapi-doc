@@ -1,11 +1,11 @@
-#小红书接口
+# 小红书接口
 
 url请求需带上参数key，每个用户有唯一的key。
 
 所有接口均返回json格式，其中参数ok[true|false]表示是否请求成功.
 
 
-####1. 获取单个笔记详细数据
+#### 获取单个笔记详细数据
 ```
 http://whosecard.com:8081/api/xiaohongshu/note/detail?note_id=***&key=***
 
@@ -30,7 +30,7 @@ http://whosecard.com:8081/api/xiaohongshu/note/detail?note_id=***&key=***
 }
 ```
 
-####2. 获取用户笔记列表
+#### 获取用户笔记列表
 ```
 http://whosecard.com:8081/api/xiaohongshu/user/notes?user_id=***&page=1&key=***
 
@@ -44,7 +44,7 @@ http://whosecard.com:8081/api/xiaohongshu/user/notes?user_id=***&page=1&key=***
 }
 ```
 
-####3. 获取用户个人页信息
+#### 获取用户个人页信息
 ```
 http://whosecard.com:8081/api/xiaohongshu/user/info?user_id=***&key=***
 
@@ -57,7 +57,7 @@ http://whosecard.com:8081/api/xiaohongshu/user/info?user_id=***&key=***
 }
 ```
 
-####4. 获取商城店铺下的商品列表
+#### 获取商城店铺下的商品列表
 ```
 http://whosecard.com:8081/api/xiaohongshu/store/items?store_id=***&page=1&key=***
 
@@ -71,7 +71,7 @@ http://whosecard.com:8081/api/xiaohongshu/store/items?store_id=***&page=1&key=**
 }
 ```
 
-####5. 关键字搜索列表
+#### 关键字搜索列表
 ```
 http://whosecard.com:8081/api/xiaohongshu/search/notes?keyword=口红&key=***&page=1
 
@@ -85,7 +85,7 @@ http://whosecard.com:8081/api/xiaohongshu/search/notes?keyword=口红&key=***&pa
 }
 ```
 
-####5. 话题页/poi页相关接口
+#### 话题页/poi页相关接口
 ```
 http://whosecard.com:8081/api/xiaohongshu/fe_api?pageId=***&key=***
 

@@ -1,4 +1,4 @@
-#公众号文章内容
+# 公众号文章内容
 
 url请求需带上参数key，每个用户有唯一的key。
 
@@ -15,6 +15,6 @@ http://whosecard.com:8081/api/wx/article?url=https://mp.weixin.qq.com/s/MHMyuGzd
 	"ok": true,
 	"result": {***}
  }
- 
+
  默认返回的是json化之后的文章数据，如果只想要原始html页面，可带上参数needJson=0
 ```
