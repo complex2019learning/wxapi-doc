@@ -18,6 +18,7 @@
 
 #### 实时获取文章内容信息，[接口文档](https://dev.tencent.com/u/iwoods/p/wxapi-doc/git/blob/master/wxarticle.md)
 
+<!--
 #### 获取搜狗公众号/关键字最近N天内的更新文章，[接口文档](https://dev.tencent.com/u/iwoods/p/wxapi-doc/git/blob/master/api5.md)
 ```
 最近N天的范围是：7 >= N >= 1
@@ -29,6 +30,7 @@
 ```
 
 #### 微信指数，[接口文档](https://dev.tencent.com/u/iwoods/p/wxapi-doc/git/blob/master/wxindex.md)
+-->
 
 #### 抖音相关接口，[接口文档](https://dev.tencent.com/u/iwoods/p/wxapi-doc/git/blob/master/douyin.md)
 
