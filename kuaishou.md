@@ -134,3 +134,20 @@ subPath可取值为: detail与feed，分别代表详情页与feed页。
   }
 }
 ```
+
+#### 搜索接口（app版）
+```
+http://whosecard.com:8081/api/kuaishou/search?search_type=new&keyword=***&pcursor=***&ussid=***&key=***
+
+search_type为搜索类型，可取值： new(综合), user(用户), imGroup(群聊), tag(标签), feed(作品)
+keyword为要搜索的关键词
+pcursor与ussid用于翻页，第一页不用填，返回结果的pcursor和ussid值为下一页的请求参数。
+
+返回如下：
+{
+  "ok": true,
+  "result": {
+    ... # 返回值与官方接口一样
+  }
+}
+```
