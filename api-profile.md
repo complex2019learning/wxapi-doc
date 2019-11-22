@@ -56,6 +56,8 @@ http://whosecard.com:8081/api/wx/profile?biz=MjM5ODIyMTE0MA==&key=***
 
 如果需要翻页，需要带上offset参数，如offset=10，则返回从第11次开始的10次文章，此参数与微信接口的offset参数含义一致。
 
+⚠️翻页最多不能超过500次，也就是说offset必须小于490，否则会返回error:"reach offset limit."
+
 ⚠️注意，如果是公众号自身的问题导致失败，依旧会扣费，并在error字段返回失败原因，同时会返回cost字段为true，如下：
 {'ok': false, 'error': '此帐号已申请公众号帐号迁移流程，被冻结/回收，小主页暂无法访问。', 'cost': true}
 {'ok': false, 'error': '此帐号已自主注销，内容无法查看。', 'cost': true}
