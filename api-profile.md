@@ -33,7 +33,7 @@ http://whosecard.com:8081/api/wx/articles?biz=MjM5ODIyMTE0MA==&key=***
 
 默认最多返回最近十次发文（⚠️不是十篇也不是十天，是十次）
 
-⚠️翻页最多不能超过500次，也就是说offset必须小于490，否则会返回error:"reach offset limit."
+⚠️翻页有上限，最多能拿到最近500次发文，也就是说offset必须小于490，否则会返回error:"reach offset limit."
 
 如果需要翻页，需要带上offset参数，如offset=10，则返回从第11次开始的10次文章，此参数与微信接口的offset参数含义一致。
 
