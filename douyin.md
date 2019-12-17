@@ -224,3 +224,31 @@ cursor在翻页时会用到，初始默认为0，如果前一页请求返回的h
   }
 }
 ```
+
+#### 获取用户粉丝列表
+```
+http://whosecard.com:8081/api/douyin/aweme/user/follower/list?key=***&user_id=***
+
+如果要翻页，需要传入max_time参数，此参数可从前一页的返回值min_time获取（⚠️这里是min_time，不是max_time），每次翻页都会更新。
+返回如下：
+{
+  "ok": true,
+  "result": {
+    ... # 返回值与抖音接口一样，字段比较多，按字面意思理解即可
+  }
+}
+```
+
+#### 获取用户关注列表
+```
+http://whosecard.com:8081/api/douyin/aweme/user/following/list?key=***&user_id=***
+
+如果要翻页，需要传入max_time参数，此参数可从前一页的返回值min_time获取（⚠️这里是min_time，不是max_time），每次翻页都会更新。
+返回如下：
+{
+  "ok": true,
+  "result": {
+    ... # 返回值与抖音接口一样，字段比较多，按字面意思理解即可
+  }
+}
+```
