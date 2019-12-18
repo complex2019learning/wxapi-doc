@@ -21,12 +21,7 @@ http://whosecard.com:8081/api/xiaohongshu/note/detail?note_id=***&key=***
 {
   "cost": true,
   "error": "作品不存在",
-  "ok": false,
-  "result": {
-    "msg": "",
-    "result": -1,
-    "success": false
-  }
+  "ok": false
 }
 ```
 
@@ -54,6 +49,13 @@ http://whosecard.com:8081/api/xiaohongshu/user/info?user_id=***&key=***
   "result": {
     ... # 返回值与小红书接口一样
   }
+}
+
+当用户不存在时，则返回如下：
+{
+  "cost": true,
+  "error": "用户不存在",
+  "ok": false
 }
 ```
 
