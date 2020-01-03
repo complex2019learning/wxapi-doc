@@ -29,7 +29,7 @@ http://whosecard.com:8081/api/xiaohongshu/note/detail?note_id=***&key=***
 ```
 http://whosecard.com:8081/api/xiaohongshu/user/notes?user_id=***&page=1&key=***
 
-如果要翻页，需要传入page参数，从1开始，每页最多15条。
+如果要翻页，需要传入page参数，从1开始，每页最多10条。
 返回如下：
 {
   "ok": true,
