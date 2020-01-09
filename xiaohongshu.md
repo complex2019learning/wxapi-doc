@@ -25,6 +25,20 @@ http://whosecard.com:8081/api/xiaohongshu/note/detail?note_id=***&key=***
 }
 ```
 
+#### 获取单个笔记关联的商品列表（当笔记存在关联商品时才需要调用此接口）
+```
+http://whosecard.com:8081/api/xiaohongshu/note/goods?note_id=***&key=***
+
+如果要翻页，需要传入page参数，从1开始，每页最多10条。
+返回如下：
+{
+  "ok": true,
+  "result": {
+    ... # 返回值与小红书接口一样，字段比较多，按字面意思理解即可
+  }
+}
+```
+
 #### 获取用户笔记列表
 ```
 http://whosecard.com:8081/api/xiaohongshu/user/notes?user_id=***&page=1&key=***
