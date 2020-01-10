@@ -25,6 +25,38 @@ http://whosecard.com:8081/api/xiaohongshu/note/detail?note_id=***&key=***
 }
 ```
 
+#### 获取笔记的评论列表
+```
+http://whosecard.com:8081/api/xiaohongshu/note/comments?note_id=***&key=***
+
+每页返回20条。
+如果要翻页，需要传入cursor参数（会在前一次请求结果里返回），第一次请求不需要传此参数。
+返回如下：
+{
+  "ok": true,
+  "result": {
+    'cursor': '5e16e6200000000001009400',
+    'data':{...}  # 评论数据
+  }
+}
+```
+
+#### 获取单条评论下的回复列表
+```
+http://whosecard.com:8081/api/xiaohongshu/note/sub_comments?note_id=***&comment_id=***&key=***
+
+每页返回20条。
+如果要翻页，需要传入cursor参数（会在前一次请求结果里返回），第一次请求不需要传此参数。
+返回如下：
+{
+  "ok": true,
+  "result": {
+    'cursor': '5e16e6200000000001009400',
+    'data': []  # 评论回复列表
+  }
+}
+```
+
 #### 获取单个笔记关联的商品列表（当笔记存在关联商品时才需要调用此接口）
 ```
 http://whosecard.com:8081/api/xiaohongshu/note/goods?note_id=***&key=***
