@@ -41,9 +41,9 @@ ps：所有统计性数字上万后会使用缩写，比如：3.1w
 
 #### 获取单个视频的信息（app版）
 ```
-http://whosecard.com:8081/api/kuaishou/photo/profile?photoId=***&key=***
+http://whosecard.com:8081/api/kuaishou/photo/profile/v2?photoId=***&key=***
 
-photoId是视频的唯一数字id，如：5189835632447473584
+photoId是视频的唯一数字id，如：3xa7rzmrfa4epwq
 
 返回如下：
 {
