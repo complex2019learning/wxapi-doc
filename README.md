@@ -16,7 +16,9 @@
 
 #### 实时获取文章评论/阅读点赞数，[接口文档](https://dev.tencent.com/u/iwoods/p/wxapi-doc/git/blob/master/api4.md)
 
-#### 实时获取文章内容信息，[接口文档](https://dev.tencent.com/u/iwoods/p/wxapi-doc/git/blob/master/wxarticle.md)
+#### 实时获取微信文章内容信息，[接口文档](https://dev.tencent.com/u/iwoods/p/wxapi-doc/git/blob/master/wxarticle.md)
+
+#### 微信文章搜索（舆情相关），[接口文档](https://dev.tencent.com/u/iwoods/p/wxapi-doc/git/blob/master/wxsearch.md)
 
 <!--
 #### 获取搜狗公众号/关键字最近N天内的更新文章，[接口文档](https://dev.tencent.com/u/iwoods/p/wxapi-doc/git/blob/master/api5.md)
