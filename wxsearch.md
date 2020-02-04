@@ -9,7 +9,7 @@ url请求需带上参数key，每个用户有唯一的key。
 
 ⚠️试用阶段为体验目的，不建议大量调用依赖～
 
-http://whosecard.com:8081/api/wx/search/article?keyword=***&start=0&count=10
+http://whosecard.com:8081/api/wx/article/search?keyword=***&start=0&count=10
 
 start: 文章偏移量，初始值为0，若需翻页，可使用返回结果的nextStart
 count: 每页返回文章篇数，最大20
