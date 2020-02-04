@@ -37,6 +37,21 @@ http://whosecard.com:8081/api/douyin/aweme/post/web?key=***&user_id=96637069360
 ps： 本接口的字段比app版本返回的会少一些，但核心字段差不多都有，同时会返回作品播放量。
 ```
 
+#### 实时获取up主喜欢（点赞）的视频列表（按时间排序）
+```
+http://whosecard.com:8081/api/douyin/aweme/favorite?key=***&user_id=96637069360
+
+如果要翻页，则需要传入max_cursor参数，此参数在前一页的请求中会返回，每次翻页都会更新。
+
+返回如下：
+{
+  "ok": true,
+  "result": {
+    ... # 返回值与抖音接口一样，字段比较多，按字面意思理解即可
+  }
+}
+```
+
 #### 实时获取挑战视频列表（按热度排序）
 ```
 http://whosecard.com:8081/api/douyin/aweme/challenge?key=***&ch_id=1611823344632835
