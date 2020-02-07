@@ -5,7 +5,8 @@ url请求需带上参数key，每个用户有唯一的key。
 所有接口均返回json格式，其中参数ok[true|false]表示是否请求成功.
 
 ⚠️正式使用前可试用免费体验版[微信文章搜索工具](https://whosecard.com/wx/article/search)
-⚠️如需加入指定公众号，可提交biz列表文章给作者。
+
+⚠️如需加入指定公众号，可提交biz列表给作者。
 
 ```
 http://whosecard.com:8081/api/wx/article/search?keyword=***&start=0&key=***
