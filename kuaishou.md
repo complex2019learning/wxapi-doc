@@ -4,14 +4,31 @@ url请求需带上参数key，每个用户有唯一的key。
 
 所有接口均返回json格式，其中参数ok[true|false]表示是否请求成功.
 
-#### 根据用户分享链接获取用户id信息
+#### 根据用户分享链接获取用户id信息(本接口已失效，请通过下面的接口来获取id信息)
 ```
 http://whosecard.com:8081/api/kuaishou/userIdInfo?profileUrl=***&key=***
 
-参数prifileUrl为快手个人页的分享链接，需要urlencode，比如：
+参数profileUrl为快手个人页的分享链接，需要urlencode，比如：
 https://live.kuaishou.com/profile/xq935932775
 编码后为
 https%3a%2f%2flive.kuaishou.com%2fprofile%2fxq935932775
+
+返回如下：
+{
+  "ok": true,
+  "result": {
+    "userEid": "xq935932775",
+    "userId": 344153274
+  }
+}
+```
+
+#### 根据用户任意作品分享链接里的photoId获取用户id信息
+```
+http://whosecard.com:8081/api/kuaishou/userIdInfo?photoId=***&key=***
+
+参数photoId为快手个人页的任意作品id，即分享链接的最后一部分，比如：
+https://kphshanghai.m.chenzhongtech.com/fw/photo/3xn3da4txhinyv4 里的 3xn3da4txhinyv4 即为photoId
 
 返回如下：
 {
@@ -39,7 +56,7 @@ userId为用户唯一数字id，如: 119808726
 ps：所有统计性数字上万后会使用缩写，比如：3.1w
 ```
 
-#### 获取单个视频的信息（app版）
+#### 获取单个视频的信息（app版，可能不稳定，建议使用web版接口）
 ```
 http://whosecard.com:8081/api/kuaishou/photo/profile/v2?photoId=***&key=***
 
