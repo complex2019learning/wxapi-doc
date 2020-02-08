@@ -25,7 +25,7 @@ https%3a%2f%2flive.kuaishou.com%2fprofile%2fxq935932775
 
 #### 根据用户任意作品分享链接里的photoId获取用户id信息
 ```
-http://whosecard.com:8081/api/kuaishou/userIdInfo?photoId=***&key=***
+http://whosecard.com:8081/api/kuaishou/userIdInfoFromPhoto?photoId=***&key=***
 
 参数photoId为快手个人页的任意作品id，即分享链接的最后一部分，比如：
 https://kphshanghai.m.chenzhongtech.com/fw/photo/3xn3da4txhinyv4 里的 3xn3da4txhinyv4 即为photoId
