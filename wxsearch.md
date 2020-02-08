@@ -11,15 +11,19 @@ url请求需带上参数key，每个用户有唯一的key。
 ```
 http://whosecard.com:8081/api/wx/article/search?keyword=***&start=0&key=***
 
-此接口每次返回最多10篇文章。只要成功，不管是否有文章，都按照成功收费（比如搜了不存在的关键词）
-
+keyword: 搜索关键词，多个关键词可用空格分开（不分开也可以，会自动分词）
+accountId: 公众号ID，限定在此公众号下进行搜索，如： rmrbwx
+accountName: 公众号名称，限定在此公众号下进行搜索，如： 人民日报
 start: 文章偏移量，初始值为0，若需翻页，可使用返回结果的nextStart
 startDate: 指定搜索时间的起始日期，搜索时会包含此日期，格式如： 2019-10-01
 endDate: 指定搜索时间的截止日期（如若不填则默认截止到今天），搜索时会包含此日期，格式如： 2019-12-01
+sort: 排序，目前支持三种排序，分别为：0(默认排序), 1(按发布时间倒序，最新发布的排在前面), 2(按发布时间增序，最早发布的排在前面)，默认为0
 summary: 如果传1，则title,content,accountId,accountName这几个字段会将匹配到的关键词用<em>标签包裹，一般用户搜索高亮显示，默认不开启
 
-
+keyword，accountId，accountName三个参数必须填一个。其中accountId，accountName参数之中只能填一个，如果填了accountId或者accountName且没有填keyword，则会返回该公众号下的所有收录文章。
 当startDate与endDate不传时，表示不限制搜索时间。
+
+此接口每次返回最多10篇文章。只要成功，不管是否有文章，都按照成功收费（比如搜了不存在的关键词）
 
 ⚠️同一个关键词搜索通过翻页最多能返回5000篇文章，如果总条数大于5000，建议缩小搜索日期进行遍历
 
