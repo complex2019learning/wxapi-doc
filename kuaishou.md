@@ -54,6 +54,21 @@ photoId是视频的唯一数字id，如：3xa7rzmrfa4epwq
 }
 ```
 
+#### 获取单个视频的信息（web版）
+```
+http://whosecard.com:8081/api/kuaishou/photo/profile/web/v1?photoId=***&key=***
+
+photoId是视频的唯一数字id，如：3xa7rzmrfa4epwq
+
+返回如下：
+{
+  "ok": true,
+  "result": {
+    ... # 返回字段按字面意思理解即可
+  }
+}
+```
+
 #### 获取小店商品列表
 ```
 http://whosecard.com:8081/api/kuaishou/grocery/product?userId=358250606&page=1&key=***
