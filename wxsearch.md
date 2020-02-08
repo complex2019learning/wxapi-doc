@@ -12,8 +12,8 @@ url请求需带上参数key，每个用户有唯一的key。
 http://whosecard.com:8081/api/wx/article/search?keyword=***&start=0&key=***
 
 keyword: 搜索关键词，多个关键词可用空格分开（不分开也可以，会自动分词）
-accountId: 公众号ID，限定在此公众号下进行搜索，如： rmrbwx
-accountName: 公众号名称，限定在此公众号下进行搜索，如： 人民日报
+accountId: 公众号ID，限定在此公众号下进行搜索，如: rmrbwx
+accountName: 公众号名称，限定在此公众号下进行搜索，如: 人民日报
 start: 文章偏移量，初始值为0，若需翻页，可使用返回结果的nextStart
 startDate: 指定搜索时间的起始日期，搜索时会包含此日期，格式如： 2019-10-01
 endDate: 指定搜索时间的截止日期（如若不填则默认截止到今天），搜索时会包含此日期，格式如： 2019-12-01
