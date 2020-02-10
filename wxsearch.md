@@ -11,6 +11,7 @@ url请求需带上参数key，每个用户有唯一的key。
 ```
 http://whosecard.com:8081/api/wx/article/search?keyword=***&start=0&key=***
 
+query参数解释：
 keyword: 搜索关键词，多个关键词可用空格分开（不分开也可以，会自动分词）
 accountId: 公众号ID，限定在此公众号下进行搜索，如: rmrbwx
 accountName: 公众号名称，限定在此公众号下进行搜索，如: 人民日报
