@@ -60,7 +60,7 @@ ps：所有统计性数字上万后会使用缩写，比如：3.1w
 ```
 http://whosecard.com:8081/api/kuaishou/photo/profile/v2?photoId=***&key=***
 
-photoId是视频的唯一数字id，如：3xa7rzmrfa4epwq
+photoId是视频的唯一数字id，如：5223894118313887282
 
 返回如下：
 {
@@ -75,7 +75,7 @@ photoId是视频的唯一数字id，如：3xa7rzmrfa4epwq
 ```
 http://whosecard.com:8081/api/kuaishou/photo/profile/web/v1?photoId=***&key=***
 
-photoId是视频的唯一数字id，如：3xa7rzmrfa4epwq
+photoId是视频id，如：3xa7rzmrfa4epwq
 
 返回如下：
 {
