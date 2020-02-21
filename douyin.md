@@ -301,7 +301,7 @@ category_id为品牌分类id，从【品牌热DOU榜 - 品牌分类列表】接�
 http://whosecard.com:8081/api/douyin/aweme/hotsearch/brand/billboard?key=***&category_id=**&start_date=**
 
 category_id为品牌分类id，从【品牌热DOU榜 - 品牌分类列表】接口获取
-start_date为指定某一期榜单，如果为空则去最近一期，可选值从【品牌热DOU榜 - 指定品牌分类下的历史榜单】接口获取
+start_date为指定某一期榜单，如果为空字符串则取最近一期，可选值从【品牌热DOU榜 - 指定品牌分类下的历史榜单】接口获取
 
 返回如下：
 {
