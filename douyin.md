@@ -267,3 +267,63 @@ http://whosecard.com:8081/api/douyin/aweme/user/following/list?key=***&user_id=*
   }
 }
 ```
+
+#### 品牌热DOU榜 - 品牌分类列表
+```
+http://whosecard.com:8081/api/douyin/aweme/hotsearch/brand/category?key=***
+
+返回如下：
+{
+  "ok": true,
+  "result": {
+    ... # 返回值与抖音接口一样，字段比较多，按字面意思理解即可
+  }
+}
+```
+
+#### 品牌热DOU榜 - 指定品牌分类下的历史榜单
+```
+http://whosecard.com:8081/api/douyin/aweme/hotsearch/brand/weekly/list?key=***&category_id=**
+
+category_id为品牌分类id，从【品牌热DOU榜 - 品牌分类列表】接口获取
+
+返回如下：
+{
+  "ok": true,
+  "result": {
+    ... # 返回值与抖音接口一样，字段比较多，按字面意思理解即可
+  }
+}
+```
+
+#### 品牌热DOU榜 - 指定品牌分类下的指定某一期榜单信息
+```
+http://whosecard.com:8081/api/douyin/aweme/hotsearch/brand/billboard?key=***&category_id=**&start_date=**
+
+category_id为品牌分类id，从【品牌热DOU榜 - 品牌分类列表】接口获取
+start_date为指定某一期榜单，如果为空则去最近一期，可选值从【品牌热DOU榜 - 指定品牌分类下的历史榜单】接口获取
+
+返回如下：
+{
+  "ok": true,
+  "result": {
+    ... # 返回值与抖音接口一样，字段比较多，按字面意思理解即可
+  }
+}
+```
+
+#### 品牌热DOU榜 - 获取单个品牌的详情数据
+```
+http://whosecard.com:8081/api/douyin/aweme/hotsearch/brand/detail?key=***&category_id=**&brand_id=**
+
+category_id为品牌分类id，从【品牌热DOU榜 - 品牌分类列表】接口获取
+brand_id为品牌id，从【品牌热DOU榜 - 指定品牌分类下的指定某一期榜单信息】接口获取
+
+返回如下：
+{
+  "ok": true,
+  "result": {
+    ... # 返回值与抖音接口一样，字段比较多，按字面意思理解即可
+  }
+}
+```
