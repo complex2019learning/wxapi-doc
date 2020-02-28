@@ -10,6 +10,8 @@ http://whosecard.com:8081/api/wx/article?url=***&key=***
 eg:
 http://whosecard.com:8081/api/wx/article?url=https://mp.weixin.qq.com/s/MHMyuGzdz2ZsFwczjR_T9g&key=***
 
+⚠️url参数需要进行urlencode
+
 返回如下：
 {
 	"ok": true,
