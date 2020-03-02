@@ -1,4 +1,6 @@
-# 搜索指定关键词的文章列表
+# 自建公众号内容库相关接口
+
+#### 本内容库收录了200w+公众号，每日文章量统计在150w+篇（节假日或周末会低一些）
 
 url请求需带上参数key，每个用户有唯一的key。
 
@@ -8,13 +10,50 @@ url请求需带上参数key，每个用户有唯一的key。
 
 ⚠️如需加入指定公众号，可提交biz列表给作者。
 
+### 批量查询公众号是否被收录
+
 ```
-http://whosecard.com:8081/api/wx/article/search?keyword=***&start=0&key=***
+GET http://whosecard.com:8081/api/wx/gzh/includeStatus?biz=***&key=***
+
+query参数解释：
+biz: 公众号biz，如: MjM5MjAxNDM4MA==，指定多个公众号时，用半角逗号,分隔，单次最多查询100个
+
+请求成功会返回如下：
+{
+  "cost": true,
+  "ok": true,
+  "result": {
+    "MjM5MDE0Mjc4MA==": {
+      "include": true,  # 是否被收录
+      "invalid": false,  # 公众号是否已失效，比如被封，已转移等
+      "invalidReason": null  # 公众号失效原因
+    },
+    "MjM5ODIyMTE0MA==": {
+      "include": true,
+      "invalid": false,
+      "invalidReason": null
+    }
+  }
+}
+
+请求成功会返回如下：
+{
+  "cost": false,
+  "ok": false,
+  "error": "****"
+}
+```
+
+### 搜索指定关键词的文章列表(可指定公众号范围)
+
+```
+GET http://whosecard.com:8081/api/wx/article/search?keyword=***&start=0&key=***
 
 query参数解释：
 keyword: 搜索关键词，多个关键词可用空格分开（不分开也可以，会自动分词）
-accountId: 公众号ID，限定在此公众号下进行搜索，如: rmrbwx
-accountName: 公众号名称，限定在此公众号下进行搜索，如: 人民日报
+biz: 公众号biz，限定在此公众号下进行搜索，如: MjM5MjAxNDM4MA==，指定多个公众号时，用半角逗号,分隔
+accountId: 公众号ID，限定在此公众号下进行搜索，如: rmrbwx，指定多个公众号时，用半角逗号,分隔
+accountName: 公众号名称，限定在此公众号下进行搜索，如: 人民日报，指定多个公众号时，用半角逗号,分隔
 start: 文章偏移量，初始值为0，若需翻页，可使用返回结果的nextStart
 startDate: 指定搜索时间的起始日期，搜索时会包含此日期，格式如： 2019-10-01
 endDate: 指定搜索时间的截止日期（如若不填则默认截止到今天），搜索时会包含此日期，格式如： 2019-12-01
@@ -23,7 +62,10 @@ endTime: 指定搜索时间的截止时间戳（如若不填则默认截止到�
 sort: 排序，目前支持三种排序，分别为：0(默认排序), 1(按发布时间倒序，最新发布的排在前面), 2(按发布时间增序，最早发布的排在前面)，默认为0
 summary: 如果传1，则title,content,accountId,accountName这几个字段会将匹配到的关键词用<em>标签包裹，一般用户搜索高亮显示，默认不开启
 
-keyword，accountId，accountName三个参数必须填一个。其中accountId，accountName参数之中只能填一个，如果填了accountId或者accountName且没有填keyword，则会返回该公众号下的所有收录文章。
+keyword，biz，accountId，accountName三个参数必须填一个。其中biz，accountId，accountName参数同一时间只能有一个生效，如果填了biz或accountId或accountName且没有填keyword，则会返回该公众号下的所有收录文章。
+
+⚠️本接口支持指定一批公众号范围内进行搜索，多个账号用逗号分隔即可，同一次请求最多指定50个公众号。
+
 startDate/endDate与startTime/endTime都是限定时间范围的参数，所以同一时间最多只需要传其中一组，当不传时，表示不限制搜索时间。
 
 此接口每次返回最多10篇文章。只要成功，不管是否有文章，都按照成功收费（比如搜了不存在的关键词）
