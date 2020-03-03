@@ -64,7 +64,9 @@ summary: 如果传1，则title,content,accountId,accountName这几个字段会�
 
 keyword，biz，accountId，accountName三个参数必须填一个。其中biz，accountId，accountName参数同一时间只能有一个生效，如果填了biz或accountId或accountName且没有填keyword，则会返回该公众号下的所有收录文章。
 
-⚠️本接口支持指定一批公众号范围内进行搜索，多个账号用逗号分隔即可，同一次请求最多指定50个公众号。
+⚠️有时候会发现按时间排序返回的搜索结果不是最新的，那是因为命中的候选文档太多时(超过100w条)，导致最新的反而没有进入搜索候选池，这种情况下需要限制一下过滤条件，比如指定时间范围
+
+⚠️本接口支持指定一批公众号范围内进行搜索，多个账号用逗号分隔即可，同一次请求最多指定40个公众号。
 
 startDate/endDate与startTime/endTime都是限定时间范围的参数，所以同一时间最多只需要传其中一组，当不传时，表示不限制搜索时间。
 
