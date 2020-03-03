@@ -199,6 +199,7 @@ keyword为搜索关键词，如：北京坊
 search_source为搜索类型，目前支持以下取值：
 	video_search: 搜索视频，如需翻页，可传入cursor参数（上一页会返回下一页的cursor值）
 	poi: 搜索地点
+  user: 搜索用户，此时keyword建议填用户的short_id(抖音号)
 
 返回如下：
 {
