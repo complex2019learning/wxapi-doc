@@ -4,7 +4,7 @@
 
 所有接口均返回json格式，其中参数ok[true|false]表示是否请求成功，当ok=false时，会返回对应的error字段.
 
-所有接口只要返回cost=true，就表示请求有效，会进行收费。
+所有接口只要返回cost=true，就表示请求有效，会进行收费。当cost=true时，即使请求失败，也不要再重试了，这种情况一般是请求资源已经失效。
 
 ### 相关接口及收费价格如下：[费用查询接口](https://iwoods.coding.net/p/wxapi-doc/d/wxapi-doc/git/blob/master/pay.md)
 
