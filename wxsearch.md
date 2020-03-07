@@ -62,7 +62,7 @@ endTime: 指定搜索时间的截止时间戳（如若不填则默认截止到�
 sort: 排序，目前支持三种排序，分别为：0(默认排序), 1(按发布时间倒序，最新发布的排在前面), 2(按发布时间增序，最早发布的排在前面)，默认为0
 summary: 如果传1，则title,content,accountId,accountName这几个字段会将匹配到的关键词用<em>标签包裹，一般用户搜索高亮显示，默认不开启
 
-keyword，biz，accountId，accountName三个参数必须填一个。其中biz，accountId，accountName参数同一时间只能有一个生效，如果填了biz或accountId或accountName且没有填keyword，则会返回该公众号下的所有收录文章。
+keyword，biz，accountId，accountName这几个参数必须填一个。其中biz，accountId，accountName参数同一时间只能有一个生效，如果填了biz或accountId或accountName且没有填keyword，则会返回该公众号下的所有收录文章。
 
 ⚠️有时候会发现按时间排序返回的搜索结果不是最新的，那是因为命中的候选文档太多时(超过100w条)，导致最新的反而没有进入搜索候选池，这种情况下需要限制一下过滤条件，比如指定时间范围
 
