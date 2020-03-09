@@ -60,7 +60,11 @@ endDate: 指定搜索时间的截止日期（如若不填则默认截止到今�
 startTime: 指定搜索时间的起始时间戳（单位为秒）
 endTime: 指定搜索时间的截止时间戳（如若不填则默认截止到当前时间戳）（单位为秒）
 sort: 排序，目前支持三种排序，分别为：0(默认排序), 1(按发布时间倒序，最新发布的排在前面), 2(按发布时间增序，最早发布的排在前面)，默认为0
-summary: 如果传1，则title,content,accountId,accountName这几个字段会将匹配到的关键词用<em>标签包裹，一般用户搜索高亮显示，默认不开启
+summary: 如果传1，则title,content会将匹配到的关键词用<em>标签包裹，一般用户搜索高亮显示，默认不开启
+searchRange: 如果传1，则只对标题进行搜索。默认为0，即标题+正文搜素
+searchPos: 如果传1，则只返回头条。默认为0，即不限制文章发布位置
+fullMatch: 如果传1，则必须完整包含搜索词，不会进行分词处理。默认为0，即会进行适当的分词处理后再搜索
+copyrightStat: 如果传1，则只返回原创文章。如果传2，则只返回转载文章。默认为0，即返回所有
 
 keyword，biz，accountId，accountName这几个参数必须填一个。其中biz，accountId，accountName参数同一时间只能有一个生效，如果填了biz或accountId或accountName且没有填keyword，则会返回该公众号下的所有收录文章。
 
