@@ -8,7 +8,7 @@
 
 ### 相关接口及收费价格如下：[费用查询接口](https://iwoods.coding.net/p/wxapi-doc/d/wxapi-doc/git/blob/master/pay.md)
 
-#### 订阅公众号新文章推送，分钟级延时[接口文档](https://iwoods.coding.net/p/wxapi-doc/d/wxapi-doc/git/blob/master/gzhsubscription.md)
+#### 订阅公众号新文章推送，分钟级延时，[接口文档](https://iwoods.coding.net/p/wxapi-doc/d/wxapi-doc/git/blob/master/gzhsubscription.md)
 
 #### 从微信app侧获取公众号历史页，[接口文档](https://iwoods.coding.net/p/wxapi-doc/d/wxapi-doc/git/blob/master/api-profile.md)
 
