@@ -1,10 +1,11 @@
 # 快手接口
 
-url请求需带上参数key，每个用户有唯一的key。
-
-所有接口均返回json格式，其中参数ok[true|false]表示是否请求成功.
-
-所有接口只要返回cost=true，就表示请求有效，会进行收费。当cost=true时，即使请求失败，也不要再重试了，这种情况一般是请求资源已经失效。
+#### 接口说明
+* url请求需带上参数key，每个用户有唯一的key。
+* 所有接口均返回json格式，其中参数ok[true|false]表示是否请求成功.
+* retCode为返回码，详情参考[返回码说明](https://iwoods.coding.net/p/wxapi-doc/d/wxapi-doc/git/blob/master/retcode.md)
+* 当返回ok=false时，可以参考返回的error字段（如果存在的话）
+* 一般来说，接口只要返回cost=true，就表示请求有效，会进行收费，此时请不要再重试了，这种情况一般是请求资源已经失效。
 
 #### 根据用户分享链接获取用户id信息(本接口已失效，请通过下面的接口来获取id信息)
 ```
