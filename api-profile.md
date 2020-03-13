@@ -1,5 +1,7 @@
 # 实时获取公众号历史发文
 
+本接口公众号最新发文存在0-24小时内的随机延时，如果需要近实时获取最新文章，请使用[公众号订阅功能](https://iwoods.coding.net/p/wxapi-doc/d/wxapi-doc/git/blob/master/gzhsubscription.md)
+
 #### 接口说明
 * url请求需带上参数key，每个用户有唯一的key。
 * 所有接口均返回json格式，其中参数ok[true|false]表示是否请求成功.
