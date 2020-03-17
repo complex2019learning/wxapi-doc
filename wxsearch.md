@@ -56,7 +56,7 @@ GET http://whosecard.com:8081/api/wx/gzh/search?keyword=***&start=0&key=***
 query参数解释：
 keyword: 搜索关键词，多个关键词可用空格分开（不分开也可以，会自动分词）
 start: 文章偏移量，初始值为0，若需翻页，可使用返回结果的nextStart
-summary: 如果传1，则title,content会将匹配到的关键词用<em>标签包裹，一般用户搜索高亮显示，默认不开启
+summary: 如果传1，则nickname,signature会将匹配到的关键词用<em>标签包裹，一般用户搜索高亮显示，默认不开启
 
 此接口每次返回最多10条数据。只要成功，不管返回多少条，都按照成功收费（比如搜了不存在的关键词）
 
