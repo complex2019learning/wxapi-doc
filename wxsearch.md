@@ -47,6 +47,59 @@ biz: 公众号biz，如: MjM5MjAxNDM4MA==，指定多个公众号时，用半角
 }
 ```
 
+
+### 根据关键词搜索公众号
+
+```
+GET http://whosecard.com:8081/api/wx/gzh/search?keyword=***&start=0&key=***
+
+query参数解释：
+keyword: 搜索关键词，多个关键词可用空格分开（不分开也可以，会自动分词）
+start: 文章偏移量，初始值为0，若需翻页，可使用返回结果的nextStart
+summary: 如果传1，则title,content会将匹配到的关键词用<em>标签包裹，一般用户搜索高亮显示，默认不开启
+
+此接口每次返回最多10条数据。只要成功，不管返回多少条，都按照成功收费（比如搜了不存在的关键词）
+
+请求成功会返回如下：
+{
+  "retCode": 0,
+  "cost": true,
+  "ok": true,
+  "result": {
+    "count": 10, # 本次返回的文章篇数
+    "hasMore": true,  # 是否还能翻页
+    "nextStart": 10, # 翻下一页的start参数
+    "total": 294,  # 全局搜索结果条数，此值为总量，作为参考使用，实际能返回的文章量由viewTotal决定
+    "viewTotal": 294,  # 通过翻页可返回的结果条数，此值最大为5000
+    "items": [  # 公众号列表
+      {
+        "accountId": "qhd_xinxianshier",
+        "alias": "qhd_xinxianshier",
+        "biz": "MzA5NDIxMTMyMA==",
+        "headImageUrl": "http://wx.qlogo.cn/mmhead/Q3auHgzwzM69oAYHfRvCmLYqtmZt9AzL1yFkoPfwfFAcAtK5mw9uvQ/0",
+        "nickname": "秦皇岛新鲜事儿",
+        "publishStats": {  # 统计每月发文频率，此值更新不一定非常及时
+          "monthArticleNum": 87,  # 月发文篇数
+          "monthPublishedCount": 31,  # 月发文次数
+          "monthPublishedDays": 31  # 月发文天数
+        },
+        "signature": "每天精彩发送：秦皇岛的头条新闻、热点新闻、江湖传闻、新闻趣事、<em>小道消息</em>、关注我们，每天知晓身边的大事、小事、新鲜事儿……",
+        "username": "gh_0e90a2ece9e8"
+      }
+      ...
+    ]
+  }
+}
+
+请求失败会返回如下：
+{
+  "retCode": ****,
+  "cost": false,
+  "ok": false,
+  "error": "****"
+}
+```
+
 ### 搜索指定关键词的文章列表(可指定公众号范围)
 
 ```
@@ -107,7 +160,7 @@ startDate/endDate与startTime/endTime都是限定时间范围的参数，所以�
   }
 }
 
-请求成功会返回如下：
+请求失败会返回如下：
 {
   "cost": false,
   "ok": false,
