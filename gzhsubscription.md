@@ -32,6 +32,8 @@ POST 链接为用户提供的回调接口
 [
   {
     "biz" : "MzI3NTQxOTA5NA==",
+    "nickname" : "说江苏",
+    "alias" : "JS71038",
     "mid" : 2247496752,
     "idx" : 6,
     "url" : "http://mp.weixin.qq.com/s?__biz=MzI3NTQxOTA5NA==&mid=2247496752&idx=6&sn=ce24182b39feb7764ea52a06335d6674&scene=0",
@@ -56,14 +58,16 @@ GET http://whosecard.com:8081/api/wx/gzh/subscription/pull?key=***
 {
   "articles": [
     {
-      "biz": "MzI3NTQxOTA5NA==",
-      "idx": 4,
-      "mid": 2247496752,
-      "content": "",
-      "cover": "http://mmbiz.qpic.cn/mmbiz_jpg/IRFXibKRUAQsDppLSQx3icI7AuCfGXFfRrtwZAvocqyNsjK2icv7HibIRJcGHV4dA6lqtxoHKH2rA1kbNSG8r4mHCA/0?wx_fmt=jpeg",
-      "time": 1583807728,
-      "title": "相声《报恩》爆笑全场",
-      "url": "http://mp.weixin.qq.com/s?__biz=MzI3NTQxOTA5NA==&mid=2247496752&idx=4&sn=7e489c2f079eb7a74d538378aa282880&scene=0"
+      "biz" : "MzI3NTQxOTA5NA==",
+      "nickname" : "说江苏",
+      "alias" : "JS71038",
+      "mid" : 2247496752,
+      "idx" : 6,
+      "url" : "http://mp.weixin.qq.com/s?__biz=MzI3NTQxOTA5NA==&mid=2247496752&idx=6&sn=ce24182b39feb7764ea52a06335d6674&scene=0",
+      "time" : 1583807728,
+      "title" : "小品《四大才子》，乐坏了",
+      "content" : "",
+      "cover" : "http://mmbiz.qpic.cn/mmbiz_jpg/IRFXibKRUAQsDppLSQx3icI7AuCfGXFfRrGLDPEoAqdEQVNKiagakC1BcpzJWTC1vNnEz6lib8pLYLCickyJFIibcdDA/0?wx_fmt=jpeg"
     }
   ],
   "cost": true,
