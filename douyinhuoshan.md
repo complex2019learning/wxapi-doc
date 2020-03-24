@@ -34,6 +34,4 @@ result包含了抖音返回的所有字段数据，除了statistics字段外还�
   "ok": false,
   "retCode": 1002
 }
-
-划重点：请传入有效的aweme_id
 ```
