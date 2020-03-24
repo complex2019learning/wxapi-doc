@@ -38,6 +38,8 @@
 
 #### 抖音相关接口，[接口文档](https://iwoods.coding.net/p/wxapi-doc/d/wxapi-doc/git/blob/master/douyin.md)
 
+#### 抖音火山版相关接口，[接口文档](https://iwoods.coding.net/p/wxapi-doc/d/wxapi-doc/git/blob/master/douyinhuoshan.md)
+
 #### 小红书相关接口，[接口文档](https://iwoods.coding.net/p/wxapi-doc/d/wxapi-doc/git/blob/master/xiaohongshu.md)
 
 #### 快手相关接口，[接口文档](https://iwoods.coding.net/p/wxapi-doc/d/wxapi-doc/git/blob/master/kuaishou.md)
