@@ -9,19 +9,19 @@
 
 #### 根据用户分享链接获取用户id信息(本接口已失效，请通过下面的接口来获取id信息)
 ```
-http://whosecard.com:8081/api/kuaishou/userIdInfo?profileUrl=***&key=***
+http://whosecard.com:8081/api/kuaishou/userIdInfo?shareUrl=***&key=***
 
-参数profileUrl为快手个人页的分享链接，需要urlencode，比如：
-https://live.kuaishou.com/profile/xq935932775
+参数shareUrl为快手app个人页的分享链接，需要urlencode，比如：
+https://f.kuaishou.com/snK21
 编码后为
-https%3a%2f%2flive.kuaishou.com%2fprofile%2fxq935932775
+https%3a%2f%2ff.kuaishou.com%2fsnK21
 
 返回如下：
 {
   "ok": true,
   "result": {
-    "userEid": "xq935932775",
-    "userId": 344153274
+    "userEid": "YYQXsgxka",
+    "userId": 1858201250
   }
 }
 ```
