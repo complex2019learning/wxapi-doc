@@ -107,6 +107,78 @@ http://whosecard.com:8081/api/xiaohongshu/user/info?user_id=***&key=***
 }
 ```
 
+#### 获取用户关注列表
+```
+http://whosecard.com:8081/api/xiaohongshu/user/followings/v1?user_id=***&key=***
+
+每页返回20条。
+如果要翻页，需要传入cursor参数（会在前一次请求结果里返回），第一次请求不需要传此参数。
+返回如下：
+{
+  "ok": true,
+  "retCode": 0,
+  "cost": true,
+  "result": {
+    'cursor': '5e16e6200000000001009400',
+    'data': []  # 用户列表
+  }
+}
+```
+
+#### 获取用户粉丝列表
+```
+http://whosecard.com:8081/api/xiaohongshu/user/followers/v1?user_id=***&key=***
+
+每页返回20条。
+如果要翻页，需要传入cursor参数（会在前一次请求结果里返回），第一次请求不需要传此参数。
+返回如下：
+{
+  "ok": true,
+  "retCode": 0,
+  "cost": true,
+  "result": {
+    'cursor': '5e16e6200000000001009400',
+    'data': []  # 用户列表
+  }
+}
+```
+
+#### 获取用户点赞的笔记列表
+```
+http://whosecard.com:8081/api/xiaohongshu/note/liked/v1?user_id=***&key=***
+
+每页返回7条。
+如果要翻页，需要传入cursor参数（会在前一次请求结果里返回），第一次请求不需要传此参数。
+返回如下：
+{
+  "ok": true,
+  "retCode": 0,
+  "cost": true,
+  "result": {
+    'cursor': '5e846cd30000000001006feb',
+    'data': []  # 笔记列表
+  }
+}
+```
+
+#### 获取用户收藏的笔记列表
+```
+http://whosecard.com:8081/api/xiaohongshu/note/faved/v1?user_id=***&key=***
+
+每页返回7条。
+如果要翻页，需要传入cursor参数（会在前一次请求结果里返回），第一次请求不需要传此参数。
+返回如下：
+{
+  "ok": true,
+  "retCode": 0,
+  "cost": true,
+  "result": {
+    'cursor': '5e846cd30000000001006feb',
+    'data': []  # 笔记列表
+  }
+}
+```
+
 #### 获取商城店铺下的商品列表
 ```
 http://whosecard.com:8081/api/xiaohongshu/store/items?store_id=***&page=1&key=***
