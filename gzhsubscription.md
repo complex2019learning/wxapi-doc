@@ -53,6 +53,7 @@ POST 链接为用户提供的回调接口
 GET http://whosecard.com:8081/api/wx/gzh/subscription/pull?key=***
 
 每次拉取最多获取100篇文章，按文章入库倒序返回，如果需要翻页，请传递上一页返回的cursor参数
+可传biz参数获取指定公众号的发文列表，多个公众号用半角逗号分隔，一次最多指定50个
 
 返回数据如下：
 {
