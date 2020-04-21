@@ -76,9 +76,12 @@ photoId是视频的唯一数字id，如：5223894118313887282
 
 #### 获取单个视频的信息（web版）
 ```
-http://whosecard.com:8081/api/kuaishou/photo/profile/web/v1?photoId=***&key=***
+http://whosecard.com:8081/api/kuaishou/photo/profile/web/v1?shareUrl=***&photoId=***&key=***
 
+shareUrl是视频的分享短链接，如：https://v.kuaishou.com/16tm5I
 photoId是视频id，如：3xa7rzmrfa4epwq
+
+⚠️shareUrl和photoId两者只需要传一个就行，但是最好传shareUrl，因为photoId有过期时间，同时有极少数视频的photoId参数无法获取正确结果。
 
 返回如下：
 {
