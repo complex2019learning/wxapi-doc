@@ -24,6 +24,32 @@
 * 当返回ok=false时，可以参考返回的error字段（如果存在的话）
 * 如果不明白biz是什么，请参考[FAQ](https://whosecard.com/faq)
 
+##### 获取订阅费用清单
+```
+GET http://whosecard.com:8081/api/wx/gzh/subscription/consume?key=***
+
+query参数解释：
+page: 页数，默认为0，每页最多返回100天的数据
+
+请求成功会返回如下：
+{
+  "consume": [
+    {
+      "cost": 0.1,  # 当天订阅总费用
+      "deducted": true, # 是否已从余额里扣除
+      "dt": "20200425",  # 日期
+      "gzhCount": 2,  # 当天订阅的公众号数量
+      "unitPrice": 0.05  # 订阅单价
+    }
+  ],
+  "cost": true,
+  "count": 1,
+  "hasMore": false,
+  "ok": true,
+  "retCode": 0
+}
+```
+
 ##### 当有新文章时的推送方式
 ```
 POST 链接为用户提供的回调接口
