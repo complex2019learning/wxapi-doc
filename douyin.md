@@ -152,6 +152,20 @@ http://whosecard.com:8081/api/douyin/aweme/comment?key=***&aweme_id=***
 }
 ```
 
+#### 获取视频评论回复列表
+```
+http://whosecard.com:8081/api/douyin/aweme/comment/reply?key=***&aweme_id=***&comment_id=***
+
+如果要翻页，需要传入cursor参数，此参数在前一页的请求中会返回，每次翻页都会更新。
+返回如下：
+{
+  "ok": true,
+  "result": {
+    ... # 返回值与抖音接口一样，字段比较多，按字面意思理解即可
+  }
+}
+```
+
 #### 获取抖音UP主商品橱窗列表
 ```
 http://whosecard.com:8081/api/douyin/aweme/promotion?user_id=95899249695&cursor=0&key=***
