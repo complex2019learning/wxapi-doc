@@ -19,6 +19,11 @@ http://whosecard.com:8081/api/account/info?account=webnotes&key=***
 	"account": "WebNotes",
 	"description": "在这里，我想为你呈现一幅中国互联网的清明上河图。",
 	"indexUrl": "http://wx.qlogo.cn/mmhead/Q3auHgzwzM4EOYw3p9pQDznBzXPxFSx5xwQk6LWKAkbhPhHNQNgsCw/0",
+	"tags": ["科技互联网"],  # 根据公众号原创/转载文章类型分析统计得出
+	"principalName": "Fenng",  # 账号主体名称
+	"principalType": "0",  # 账号主体类型: 0个人 1企业 2媒体 3政府
+	"verifyStatus": "1",  # 账号认证类型: 0未认证 1个人认证 2组织认证
+	"servicePhone": "",  # 电话号码
 }
 ```
 
