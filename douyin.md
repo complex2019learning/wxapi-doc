@@ -95,6 +95,19 @@ http://whosecard.com:8081/api/douyin/aweme/challenge/detail?ch_id=16126741648179
 }
 ```
 
+#### 获取话题/挑战的相关地点
+```
+http://whosecard.com:8081/api/douyin/aweme/poi/challenge/related?ch_id=***&key=***
+
+返回如下：
+{
+  "ok": true,
+  "result": {
+    ... # 返回值与抖音接口一样，字段比较多，按字面意思理解即可
+  }
+}
+```
+
 #### 实时获取单个抖音视频detail信息（不包含播放量）
 ```
 http://whosecard.com:8081/api/douyin/aweme/detail?key=***&aweme_id=6580087189395213581
