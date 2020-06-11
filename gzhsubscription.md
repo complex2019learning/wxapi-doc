@@ -1,5 +1,13 @@
 # 订阅公众号最新发文（推拉结合）
 
+#### 接口说明
+* 账号注册请联系qq:1628121385，添加好友时请注明:wxapi
+* url请求需带上参数key，每个用户有唯一的key。
+* 所有接口均返回json格式，其中参数ok[true|false]表示是否请求成功.
+* retCode为返回码，详情参考[返回码说明](https://iwoods.coding.net/p/wxapi-doc/d/wxapi-doc/git/blob/master/retcode.md)
+* 当返回ok=false时，可以参考返回的error字段（如果存在的话）
+* 如果不明白biz是什么，请参考[FAQ](https://whosecard.com/faq)
+
 #### 使用步骤
 * 提供推送回调接口（有新文章时会推送给这个接口），如果不提供回调接口，可自行拉取数据
 * 使用订阅接口，进行订阅操作
@@ -16,13 +24,6 @@
 * 除了订阅操作本身产生的费用外，每个号每天也会产生订阅费用，具体费用请咨询作者
 * 订阅费用使用后付费结算方式，所以尽量对余额进行预留，防止扣除时余额不足
 * 每天会对前一天进行后付费结算
-
-#### 接口说明
-* url请求需带上参数key，每个用户有唯一的key。
-* 所有接口均返回json格式，其中参数ok[true|false]表示是否请求成功.
-* retCode为返回码，详情参考[返回码说明](https://iwoods.coding.net/p/wxapi-doc/d/wxapi-doc/git/blob/master/retcode.md)
-* 当返回ok=false时，可以参考返回的error字段（如果存在的话）
-* 如果不明白biz是什么，请参考[FAQ](https://whosecard.com/faq)
 
 ##### 获取订阅费用清单
 ```

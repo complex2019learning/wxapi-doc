@@ -1,6 +1,7 @@
 # 实时抖音接口
 
 #### 接口说明
+* 账号注册请联系qq:1628121385，添加好友时请注明:wxapi
 * url请求需带上参数key，每个用户有唯一的key。
 * 所有接口均返回json格式，其中参数ok[true|false]表示是否请求成功.
 * retCode为返回码，详情参考[返回码说明](https://iwoods.coding.net/p/wxapi-doc/d/wxapi-doc/git/blob/master/retcode.md)
@@ -23,6 +24,8 @@ http://whosecard.com:8081/api/douyin/aweme/post?key=***&user_id=96637069360
   }
 }
 ```
+
+<!--
 #### 实时获取up主发布的视频列表 - 网页版（按时间排序）
 ```
 http://whosecard.com:8081/api/douyin/aweme/post/web?key=***&user_id=96637069360
@@ -39,6 +42,7 @@ http://whosecard.com:8081/api/douyin/aweme/post/web?key=***&user_id=96637069360
 
 ps： 本接口的字段比app版本返回的会少一些，但核心字段差不多都有，同时会返回作品播放量。
 ```
+-->
 
 #### 实时获取up主喜欢（点赞）的视频列表（按时间排序）
 ```

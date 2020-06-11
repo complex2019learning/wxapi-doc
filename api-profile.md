@@ -3,6 +3,7 @@
 本接口公众号最新发文存在0-24小时内的随机延时，如果需要近实时获取最新文章，请使用[公众号订阅功能](https://iwoods.coding.net/p/wxapi-doc/d/wxapi-doc/git/blob/master/gzhsubscription.md)
 
 #### 接口说明
+* 账号注册请联系qq:1628121385，添加好友时请注明:wxapi
 * url请求需带上参数key，每个用户有唯一的key。
 * 所有接口均返回json格式，其中参数ok[true|false]表示是否请求成功.
 * retCode为返回码，详情参考[返回码说明](https://iwoods.coding.net/p/wxapi-doc/d/wxapi-doc/git/blob/master/retcode.md)
