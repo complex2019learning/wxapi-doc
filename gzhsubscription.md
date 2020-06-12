@@ -4,7 +4,7 @@
 * 账号注册请联系qq:1628121385，添加好友时请注明:wxapi
 * url请求需带上参数key，每个用户有唯一的key。
 * 所有接口均返回json格式，其中参数ok[true|false]表示是否请求成功.
-* retCode为返回码，详情参考[返回码说明](https://iwoods.coding.net/p/wxapi-doc/d/wxapi-doc/git/blob/master/retcode.md)
+* retCode为返回码，详情参考[返回码说明](https://github.com/iwoods100/wxapi-doc/blob/master/retcode.md)
 * 当返回ok=false时，可以参考返回的error字段（如果存在的话）
 * 如果不明白biz是什么，请参考[FAQ](https://whosecard.com/faq)
 
