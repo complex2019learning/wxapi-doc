@@ -48,12 +48,12 @@ page：翻页数，默认为1
 api=single_stat
 aid=单条视频id，如 35963971
 
+获取单条视频的tag列表：
+api=detail_tag
+aid=单条视频id，如 35963971
+
 获取动态历史列表：
 api=user_space_history
 mid=用户id，如 2505015
 offset_dynamic_id： 上一页请求的最后一条动态id，用来翻页，初始为0
-
-获取标签/话题页信息 暂不支持翻页：
-api=user_space_history
-tagId=话题id，如 388    
 ```

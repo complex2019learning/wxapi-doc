@@ -10,7 +10,7 @@
 
 **除非特殊说明，默认都是从app接口获取数据。**
 
-#### 实时获取up主发布的视频列表（按时间排序）
+#### 实时获取用户发布的视频列表（按时间排序）
 ```
 http://whosecard.com:8081/api/douyin/aweme/post?key=***&user_id=96637069360
 
@@ -26,7 +26,7 @@ http://whosecard.com:8081/api/douyin/aweme/post?key=***&user_id=96637069360
 ```
 
 <!--
-#### 实时获取up主发布的视频列表 - 网页版（按时间排序）
+#### 实时获取用户发布的视频列表 - 网页版（按时间排序）
 ```
 http://whosecard.com:8081/api/douyin/aweme/post/web?key=***&user_id=96637069360
 
@@ -44,7 +44,7 @@ ps： 本接口的字段比app版本返回的会少一些，但核心字段差�
 ```
 -->
 
-#### 实时获取up主喜欢（点赞）的视频列表（按时间排序）
+#### 实时获取用户喜欢（点赞）的视频列表（按时间排序）
 ```
 http://whosecard.com:8081/api/douyin/aweme/favorite?key=***&user_id=96637069360
 
@@ -73,7 +73,7 @@ http://whosecard.com:8081/api/douyin/aweme/challenge?key=***&ch_id=1611823344632
 }
 ```
 
-#### 获取抖音UP主详情页
+#### 获取抖音用户详情页
 ```
 http://whosecard.com:8081/api/douyin/aweme/user/detail?user_id=102020882079&key=***
 
@@ -183,7 +183,7 @@ http://whosecard.com:8081/api/douyin/aweme/comment/reply?key=***&aweme_id=***&co
 }
 ```
 
-#### 获取抖音UP主商品橱窗列表
+#### 获取抖音用户商品橱窗列表
 ```
 http://whosecard.com:8081/api/douyin/aweme/promotion?user_id=95899249695&cursor=0&key=***
 
@@ -206,7 +206,7 @@ http://whosecard.com:8081/api/douyin/aweme/promotion?user_id=95899249695&cursor=
 ```
 http://whosecard.com:8081/api/douyin/haohuo/product/item?key=***&url=https%3a%2f%2fhaohuo.snssdk.com%2fviews%2fproduct%2fitem2%3fid%3d3320163565905801015%26origin_type%3d3002002000%26origin_id%3d95899249695_3320163565905801015
 
-url参数需要urlencode编码，此参数来自于【获取抖音UP主商品橱窗列表】接口的商品链接url字段。
+url参数需要urlencode编码，此参数来自于【获取抖音用户商品橱窗列表】接口的商品链接url字段。
 如：https://haohuo.snssdk.com/views/product/item2?id=3320163565905801015&origin_type=3002002000&origin_id=95899249695_3320163565905801015
 
 ⚠️ url必须是https://haohuo.snssdk.com开头，否则此接口请求无效（如果是其它链接，如淘宝商品链接，则不要请求此接口）。
