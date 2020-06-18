@@ -35,6 +35,20 @@ mid=用户id，如 2505015
 api=user_stat
 mid=用户id，如 2505015
 
+获取用户充电统计信息：
+api=user_charging
+mid=用户id，如 2505015
+
+获取用户关注列表：
+api=user_followings
+mid=用户id，如 2505015
+page：翻页数，默认为1
+
+获取用户粉丝列表：
+api=user_followers
+mid=用户id，如 2505015
+page：翻页数，默认为1
+
 获取用户基础信息：
 api=user_base
 mid=用户id，如 2505015
