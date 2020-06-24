@@ -2,7 +2,7 @@
 
 #### 订阅公众号新文章推送，分钟级延时，[接口文档](https://github.com/iwoods100/wxapi-doc/blob/master/gzhsubscription.md)
 
-#### 从微信app侧获取公众号历史页，[接口文档](https://github.com/iwoods100/wxapi-doc/blob/master/api-profile.md)
+#### 获取公众号发布文章列表，[接口文档](https://github.com/iwoods100/wxapi-doc/blob/master/api-profile.md)
 
 #### 文章临时链接转永久链接／短链接转长链接，[接口文档](https://github.com/iwoods100/wxapi-doc/blob/master/api2.md)
 
